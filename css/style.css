@@ -1,0 +1,187 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+}
+
+.header {
+  height: 100vh;
+  width: 15%;
+  background-image: linear-gradient(to bottom right, #0077cb, #141845) !important;
+  z-index: 10;
+  position: fixed;
+}
+.header__profil {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 15%;
+}
+.header__profil__image {
+  width: 50%;
+  position: relative;
+  left: 20%;
+}
+.header__profil img {
+  width: 100%;
+}
+.header__contact {
+  height: 20%;
+  width: 100%;
+  margin-bottom: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.header__contact i {
+  color: #c7e9e9;
+  font-size: 15px;
+}
+.header__contact i:hover {
+  color: #00b4ff;
+}
+.header__menu {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.header__menu a {
+  color: white;
+  padding: 5% 10% 3% 9%;
+}
+.header__menu a:hover {
+  background-color: #00b4ff !important;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 15%;
+  height: auto;
+  scroll-behavior: smooth;
+}
+.section__acceuil {
+  background-image: linear-gradient(to left bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/background/wNtjr70rWI.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-right: 30%;
+  width: 100%;
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+.section__project {
+  scroll-behavior: smooth;
+  border: 3px solid black;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.section__project__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.section__project__container__type {
+  border: 1px solid white;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.171);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 30%;
+}
+.section__project__container__type__image {
+  width: 30%;
+}
+.section__project__container__type__image img {
+  width: 100%;
+}
+.section__project__container__type__description {
+  text-align: center;
+}
+
+.container-toggle {
+  width: 10%;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.7);
+  display: none;
+  border-radius: 10px;
+  z-index: 100;
+  text-align: center;
+}
+.container-toggle i {
+  color: black;
+  font-size: 20px;
+}
+.container-toggle input {
+  display: none;
+}
+
+.btn {
+  color: #00b4ff;
+  font-size: 37px;
+  position: relative;
+  top: 20%;
+  left: 40%;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.btn__orientation {
+  color: blue;
+  font-size: 25px;
+  position: fixed;
+  top: 90%;
+  left: 93%;
+  z-index: 100;
+}
+
+.btn__orientation::-webkit-scrollbar {
+  position: fixed;
+}
+
+@media screen and (max-width: 550px) {
+  .header {
+    display: none;
+  }
+
+  .section {
+    position: absolute;
+    left: 0%;
+  }
+  .section__acceuil {
+    background-attachment: scroll;
+  }
+
+  .container-toggle {
+    position: fixed;
+    left: 3%;
+    top: 3%;
+    display: block;
+    background-color: #00b4ff;
+    border: 1px solid;
+    z-index: 100%;
+    padding: 2%;
+  }
+  .container-toggle label {
+    display: block;
+    cursor: pointer;
+  }
+
+  .toggle-move {
+    left: 35%;
+    opacity: 0.5;
+  }
+
+  .header-toggle {
+    width: 30%;
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,11 @@
+@mixin removechips {
+    list-style: none;
+} 
+@mixin positionnement($display,$direction) {
+    display: $display;
+    flex-direction: $direction;
+}
+@mixin appareanceicon($color,$size) {
+    color: $color;
+    font-size : $size;
+}

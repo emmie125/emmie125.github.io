@@ -1,0 +1,37 @@
+@media screen and(max-width: $max-width-portable){
+    .header{
+        display: none;
+    }
+.section{
+    position: absolute;
+    left: 0%;  
+    &__acceuil{
+        background-attachment: scroll;
+    }
+}
+
+ .container-toggle{
+     position: fixed;
+     left: 3%;
+     top: 3%;
+     display: block;
+     background-color:$coloricon;
+     border: 1px solid;
+     z-index: 100%;
+     padding: 2%;
+
+     label{
+         display: block;
+         cursor: pointer;
+     }
+    }
+    .toggle-move{
+        left: 35%;  
+        opacity: 0.5;
+       }
+    .header-toggle{
+       width: 30%;
+       display: block;
+      }
+ 
+}
