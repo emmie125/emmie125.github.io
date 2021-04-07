@@ -1,3 +1,14 @@
-{"identities":[{"identity":"emmanuella mulanga",
-    "biography":"Hi guys! welcome I'm a front-end and application heavy developer",
-    "avatar-profil":""}]}
+
+{
+    "identities":[
+        {"identity":"emmanuella mulanga",
+    "biography":"Hi guys, welcome! I'm a front-end and a heavy application developer",
+    "avatar-profil":"/images/profil/IMG-20210207-WA0006.jpg"}
+],
+"communication":[
+    {"instagram":"https://www.instagram.com/mulangaemmanuella/",
+        "facebook":"https://www.facebook.com/mulangaemmanuella/",
+        "gmail":"mulangaemmanuella@gmail.com"
+    }
+    ]
+}
