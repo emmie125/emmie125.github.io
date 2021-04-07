@@ -10,29 +10,42 @@
     background-image: linear-gradient(to bottom right,#0077cb, #141845) !important;
     z-index: 10;
     position: fixed;
+    padding-top:2%;
     
    
      &__profil{
 
         height: 30%; 
        @include  positionnement(flex,column);
+        
         justify-content: center;
         margin-left: 15%;
+
+        &__title{
+            margin-top: 2%;
+            h1{
+                font-size: 15px;
+                color: white;
+            }
+        }
 
         &__image{
             width: 50%;
             position: relative;
-            left: 20%;
+            left: 10%;
+           
         }
         img{
             width: 100%;
-            
+            border-radius: 100%;
+            border: 4px solid yellow;
+            border-radius: 100%;
         }
      }
      &__contact{
         height: 20%;
         width: 100%;
-        margin-bottom: 5%;
+        margin: 20% 0%;
         @include  positionnement(flex,row);
         justify-content: space-around;
         i{
@@ -74,6 +87,19 @@
         width: 100%;
         height: 100vh;
         scroll-behavior: smooth;
+        &__biography{
+            width: 50%;
+            height: 30%;
+            position: absolute;
+            top: 15%;
+        }
+        p{
+          font-style: italic;
+          color: yellow;
+          font-size: 30px;
+          text-align: center;
+          margin-top: 20%;
+        }
     }
     &__project{
         scroll-behavior: smooth;

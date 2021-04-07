@@ -1,3 +1,14 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  height: 200vh;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Kiwi Maru", serif !important;
+}
+
 .container {
   display: flex;
   flex-direction: row;
@@ -11,6 +22,7 @@
   background-image: linear-gradient(to bottom right, #0077cb, #141845) !important;
   z-index: 10;
   position: fixed;
+  padding-top: 2%;
 }
 .header__profil {
   height: 30%;
@@ -19,18 +31,28 @@
   justify-content: center;
   margin-left: 15%;
 }
+.header__profil__title {
+  margin-top: 2%;
+}
+.header__profil__title h1 {
+  font-size: 15px;
+  color: white;
+}
 .header__profil__image {
   width: 50%;
   position: relative;
-  left: 20%;
+  left: 10%;
 }
 .header__profil img {
   width: 100%;
+  border-radius: 100%;
+  border: 4px solid yellow;
+  border-radius: 100%;
 }
 .header__contact {
   height: 20%;
   width: 100%;
-  margin-bottom: 5%;
+  margin: 20% 0%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -73,6 +95,19 @@
   width: 100%;
   height: 100vh;
   scroll-behavior: smooth;
+}
+.section__acceuil__biography {
+  width: 50%;
+  height: 30%;
+  position: absolute;
+  top: 15%;
+}
+.section__acceuil p {
+  font-style: italic;
+  color: yellow;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 20%;
 }
 .section__project {
   scroll-behavior: smooth;
