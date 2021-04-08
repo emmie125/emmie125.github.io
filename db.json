@@ -20,7 +20,7 @@
         "id":1,
         "nom":"formulaire",
         "imageprojet":"images/projets/Screenshot_2021-04-08 formulaire.png",
-        "description":"This project allows to set up an information form, we used :",
+        "description":"we used technologies:",
         "github":"https://github.com/emmie125/Formulaire",
         "see":"https://emmie125.github.io/Formulaire/formulaire.html"
 }, 
@@ -28,7 +28,7 @@
 "id":2,
 "nom":"site de kinshasa digital",
 "imageprojet":"images/projets/Screenshot_2021-04-07Kinshasa digital.png",
-"description":"This project allows to set up an information form, we used :",
+"description":"we used technologies:",
 "github":"https://emmie125.github.io/Kinshasa_digital/",
 "see":"https://emmie125.github.io/Formulaire/formulaire.html"
 },
@@ -37,14 +37,14 @@
 "id":3,
 "nom":"Repertoire contact",
 "imageprojet":"images/projets/Screenshot_2021-04-07 repertoire.png",
-"description":"This project allows to set up an information form, we used :",
+"description":"we used technologies:",
 "github":"https://emmie125.github.io/Kinshasa_digital/",
 "see":"https://emmie125.github.io/Formulaire/formulaire.html"
 },
 {
 "id":4,
 "nom":"site de kinshasa digital",
-"description":"This project allows to set up an information form, we used :",
+"description":"we used technologies:",
 "imageprojet":"images/projets/Screenshot_2021-04-07Kinshasa digital.png",
 "github":"https://emmie125.github.io/Kinshasa_digital/",
 "see":"https://emmie125.github.io/Formulaire/formulaire.html"
