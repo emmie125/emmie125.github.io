@@ -14,6 +14,7 @@ body {
   flex-direction: row;
   width: 100%;
   height: auto;
+  border: 1px solid red;
 }
 
 .header {
@@ -93,7 +94,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  padding-right: 30%;
   width: 100%;
   height: 100vh;
   scroll-behavior: smooth;
@@ -111,6 +111,10 @@ body {
   font-size: 40px;
   text-align: center;
   margin-top: 20%;
+}
+.section__acceuil .fas .fa-code {
+  color: #c7e9e9;
+  font-size: 20px;
 }
 .section__project {
   scroll-behavior: smooth;
@@ -179,6 +183,10 @@ body {
 }
 
 @media screen and (max-width: 550px) {
+  .container {
+    width: 100%;
+  }
+
   .header {
     display: none;
   }

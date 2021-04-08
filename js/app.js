@@ -4,7 +4,13 @@ const biography = document.querySelector('.section__acceuil__biography p');
 
 const contactInstagram = document.querySelector('#header__contact__instagram');
 const contactFacebook = document.querySelector('#header__contact__facebook');
-const contactGmail = document.querySelector('#header__contact__gmail')
+const contactGmail = document.querySelector('#header__contact__gmail');
+
+const projectImage = document.querySelector('.section__project__container__type__image img');
+const projectTitle = document.querySelector('.section__project__container__type__title h3');
+const projectDescription = document.querySelector('.section__project__container__type__description p');
+const projectBtnSee = document.querySelector('.btn__see');
+const projectBtnGithub = document.querySelector('.btn__github');
 
 window.addEventListener('load',()=>{
     fetch("https://my-json-server.typicode.com/emmie125/emmie125.github.io/identities").then((response)=>{
@@ -28,4 +34,15 @@ window.addEventListener('load',()=>{
             contactGmail.setAttribute('href',communication.gmail);
         }
     })
+    fetch("https://my-json-server.typicode.com/emmie125/emmie125.github.io/project").then((response)=>{
+        return response.json();
+    }).then((data)=>{
+        data.forEach(project => {
+            projectImage.setAttribute('src',project.imageprojet);
+            projectTitle.textContent=project.nom;
+            projectDescription.textContent=project.description;
+            
+        });
+    });
+
 })
