@@ -6,11 +6,30 @@ const contactInstagram = document.querySelector('#header__contact__instagram');
 const contactFacebook = document.querySelector('#header__contact__facebook');
 const contactGmail = document.querySelector('#header__contact__gmail');
 
-const projectImage = document.querySelector('.section__project__container__type__image img');
-const projectTitle = document.querySelector('.section__project__container__type__title h3');
-const projectDescription = document.querySelector('.section__project__container__type__description p');
-const projectBtnSee = document.querySelector('.btn__see');
-const projectBtnGithub = document.querySelector('.btn__github');
+
+const projectImage1 = document.querySelector('#image-Project1');
+const projectTitle1 = document.querySelector('#title-Ptoject1');
+const projectDescription1= document.querySelector('#description-Projet1');
+const projectBtnSee1 = document.querySelector('#btn__see1');
+const projectBtnGithub1 = document.querySelector('#btn__github1');
+
+const projectImage2 = document.querySelector('#title-Ptoject2');
+const projectTitle2 = document.querySelector('#title-Ptoject2');
+const projectDescription2 = document.querySelector('#description-Projet2');
+const projectBtnSee2 = document.querySelector('#btn__see2');
+const projectBtnGithub2 = document.querySelector('#btn__github2');
+
+const projectImage3 = document.querySelector('#image-Project3');
+const projectTitle3 = document.querySelector('#title-Ptoject3');
+const projectDescription3 = document.querySelector('#description-Projet3');
+const projectBtnSee3 = document.querySelector('#btn__see3');
+const projectBtnGithub3 = document.querySelector('#btn__github3');
+
+const projectImage4 = document.querySelector('#image-Project4');
+const projectTitle4 = document.querySelector('#title-Ptoject4');
+const projectDescription4 = document.querySelector('#description-Projet4');
+const projectBtnSee4 = document.querySelector('#btn__see4');
+const projectBtnGithub4 = document.querySelector('#btn__github4');
 let tabProject=[];
 
 window.addEventListener('load',()=>{
@@ -39,14 +58,24 @@ window.addEventListener('load',()=>{
         return response.json();
     }).then((data)=>{
         data.forEach(project => {
-            tabProject.push({nom:project.nom,imageprojet:project.imageprojet ,description:project.description});
-            
-            // projectImage.setAttribute('src',project.imageprojet);
-            // projectTitle.textContent=project.nom;
-            // projectDescription.textContent=project.description;
-            console.log(tabProject);
-
+            tabProject.push({nom:project.nom,imageprojet:project.imageprojet ,description:project.description,github:project.github,see:project.see});   
         });
+        
+        projectInitialization(0,tabProject,projectImage1,projectTitle1,projectDescription1,projectBtnSee1,projectBtnGithub1);
+        projectInitialization(1,tabProject,projectImage2,projectTitle2,projectDescription2,projectBtnSee2,projectBtnGithub2);
+        projectInitialization(2,tabProject,projectImage3,projectTitle3,projectDescription3,projectBtnSee3,projectBtnGithub3);
+        projectInitialization(3,tabProject,projectImage4,projectTitle4,projectDescription4,projectBtnSee4,projectBtnGithub4);
+        console.log(tabProject);
+
     });
 
 })
+function projectInitialization(i,tabProject,projectImage,projectTitle,projectDescription,projectBtnSee,projectBtnGithub) {
+    
+    projectImage.setAttribute('src',tabProject[i].imageprojet);
+    projectTitle.textContent = tabProject[i].nom;
+    projectDescription.textContent =  tabProject[i].description;
+    projectBtnSee.setAttribute('href',tabProject[i].see);
+    projectBtnGithub.setAttribute('href',tabProject[i].github);
+
+}
