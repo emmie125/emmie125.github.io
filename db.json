@@ -19,7 +19,6 @@
     {
         "id":1,
         "nom":"formulaire",
-        "technologies":{"html":"fa-html5","css":"fa-css3-alt"},
         "imageprojet":"images/projets/formulaire.jpg",
         "description":"This project allows to set up an information form, we used"
     }

@@ -1,11 +1,9 @@
 @media screen and(max-width: $max-width-portable){
-    .container{
-        width: 100%;
-    }
     .header{
         display: none;
     }
 .section{
+    width: 100%;
     position: absolute;
     left: 0%;  
     &__acceuil{

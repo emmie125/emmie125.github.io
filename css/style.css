@@ -14,7 +14,6 @@ body {
   flex-direction: row;
   width: 100%;
   height: auto;
-  border: 1px solid red;
 }
 
 .header {
@@ -183,15 +182,12 @@ body {
 }
 
 @media screen and (max-width: 550px) {
-  .container {
-    width: 100%;
-  }
-
   .header {
     display: none;
   }
 
   .section {
+    width: 100%;
     position: absolute;
     left: 0%;
   }
