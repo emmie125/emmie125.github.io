@@ -6,7 +6,7 @@
 
 .header{
     height: 100vh;
-    width: 15%;
+    width: 20%;
     background-image: linear-gradient(to bottom right,#0077cb, #141845) !important;
     z-index: 10;
     position: fixed;
@@ -24,22 +24,22 @@
         &__title{
             margin-top: 2%;
             h1{
-                font-size: 15px;
+                font-size: 20px;
                 color: white;
+                font-family: 'Mukta', sans-serif;
             }
         }
 
         &__image{
-            width: 50%;
+            width: 70%;
             position: relative;
             left: 10%;
-           
+            
         }
         img{
             width: 100%;
             border-radius: 100%;
-            border: 4px solid yellow;
-            border-radius: 100%;
+            border: 7px solid  #141845;
         }
      }
      &__contact{
@@ -49,7 +49,7 @@
         @include  positionnement(flex,row);
         justify-content: space-around;
         i{
-            @include appareanceicon(rgb(199, 233, 233),15px);
+            @include appareanceicon(rgb(199, 233, 233),25px);
             
             &:hover{
                 color: #00b4ff;
@@ -63,7 +63,8 @@
         @include  positionnement(flex,column);
         a{
             color: white; 
-            padding: 5% 10% 3% 9%; 
+            padding: 7% 10% 3% 9%; 
+            font-size: 20px;
             &:hover{
                 background-color: #00b4ff!important;
             } 
@@ -74,12 +75,13 @@
 .section{
     @include positionnement(flex,column);
     position: absolute;
-    left: 15%;
+    left: 20%;
     height: auto;
     scroll-behavior: smooth;
+    width: 80%;
     &__acceuil{
        
-        background-image: linear-gradient(to left bottom,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url('../images/background/wNtjr70rWI.jpg');
+        background-image: linear-gradient(to left bottom,rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url('../images/background/wNtjr70rWI.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -91,12 +93,13 @@
             width: 50%;
             height: 30%;
             position: absolute;
-            top: 15%;
+            top: 10%;
+            left: 30%;
         }
         p{
-          font-style: italic;
-          color: yellow;
-          font-size: 30px;
+            font-family: 'beckman';
+          color: white;
+          font-size: 40px;
           text-align: center;
           margin-top: 20%;
         }
@@ -104,18 +107,19 @@
     &__project{
         scroll-behavior: smooth;
         border: 3px solid black;
+        padding-left: 10%;
         width:100%;
-      @include  positionnement(flex,column);
+     // @include  positionnement(flex,column);
         &__container{
 
-           @include  positionnement(flex,column);
+          // @include  positionnement(flex,column);
             justify-content: space-between;
             &__type{
 
                 border: 1px solid white;
                 box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.171);
 
-               @include  positionnement(flex,row);
+              // @include  positionnement(flex,row);
                 justify-content: space-between;
                 height: 30%;
                 &__image{

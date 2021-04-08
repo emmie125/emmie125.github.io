@@ -4,7 +4,7 @@
         {"id":1,
         "identity":"emmanuella mulanga",
         "biography":"Hi guys, welcome! I'm a front-end and a heavy application developer",
-        "avatarprofil":"images/profil/IMG-20210207-WA0006.jpg"
+        "avatarprofil":"images/profil/IMG-20210207-WA0006-removebg-preview.png"
     }
 ],
 "communication":[
@@ -13,5 +13,33 @@
         "facebook":"https://www.facebook.com/mulangaemmanuella/",
         "gmail":"https://www.gmail.com/mulangaemmanuella@gmail.com"
     }
-    ]
+    ],
+"project":
+[
+    {
+        "id":1,
+        "nom":"formulaire",
+        "technologies":{"html":"fa-html5","css":"fa-css3-alt"},
+        "imageprojet":"images/projets/formulaire.jpg"
+    },
+    {
+        "id":2,
+        "nom":"site de kinshasa digital",
+        "technologies":{"html":"fa-html5","css":"fa-css3-alt"},
+        "imageprojet":"images/projets/Screenshot_2021-04-07 Kinshasa digital.png"
+    },
+    {
+        "id":3,
+        "nom":"Repertoire contact",
+        "technologies":{"html":"fa-html5","css":"fa-css3-alt"},
+        "imageprojet":"images/projets/Screenshot_2021-04-07 Kinshasa digital.png"
+    }
+    ,
+    {
+        "id":4,
+        "nom":"site de kinshasa digital",
+        "technologies":{"html":"fa-html5","css":"fa-css3-alt"},
+        "imageprojet":"images/projets/Screenshot_2021-04-07 Kinshasa digital.png"
+    }
+]
 }
