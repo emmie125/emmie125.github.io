@@ -9,6 +9,10 @@ body {
   font-family: "beckman";
   src: url("../beckman/Beckman-Free.otf");
 }
+body {
+  font-size: 20px;
+}
+
 .container {
   display: flex;
   flex-direction: row;
@@ -35,7 +39,7 @@ body {
   margin-top: 2%;
 }
 .header__profil__title h1 {
-  font-size: 20px;
+  font-size: 15px;
   color: white;
   font-family: "Mukta", sans-serif;
 }
@@ -47,7 +51,6 @@ body {
 .header__profil img {
   width: 100%;
   border-radius: 100%;
-  border: 7px solid #141845;
 }
 .header__contact {
   height: 20%;
@@ -82,11 +85,12 @@ body {
 .section {
   display: flex;
   flex-direction: column;
-  position: absolute;
+  position: relative;
   left: 20%;
   height: auto;
   scroll-behavior: smooth;
   width: 80%;
+  border: 3px solid yellow;
 }
 .section__acceuil {
   background-image: linear-gradient(to left bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/background/wNtjr70rWI.jpg");
@@ -99,33 +103,42 @@ body {
 }
 .section__acceuil__biography {
   width: 50%;
-  height: 30%;
-  position: absolute;
-  top: 10%;
+  height: 80%;
+  position: relative;
+  top: 15%;
   left: 30%;
+  padding: 2% 0%;
+}
+.section__acceuil__biography div {
+  justify-content: center;
+  margin-left: 35%;
 }
 .section__acceuil p {
   font-family: "beckman";
   color: white;
   font-size: 40px;
   text-align: center;
-  margin-top: 20%;
+  margin-top: 10%;
 }
-.section__acceuil .fas .fa-code {
-  color: #c7e9e9;
-  font-size: 20px;
+.section__acceuil .fa-code {
+  color: #ae0014;
+  font-size: 50px;
+  text-align: center;
 }
 .section__project {
-  scroll-behavior: smooth;
-  border: 3px solid black;
   padding: 5% 10%;
-  width: 100% !important;
-  height: 50%;
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 .section__project__container {
   margin-top: 5%;
-  width: 100% !important;
   border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
   justify-content: space-evenly;
   height: 70%;
 }
@@ -133,8 +146,17 @@ body {
   cursor: pointer;
   padding: 5%;
   border: 1px solid white;
-  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.171) !important;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.171);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+  width: 40%;
+  height: 100%;
+  border-radius: 15px;
   justify-content: space-between;
+}
+.section__project__container__type:hover {
+  box-shadow: 2px 4px 8px rgba(45, 136, 197, 0.471);
 }
 .section__project__container__type__image {
   width: 100%;
@@ -142,10 +164,21 @@ body {
 .section__project__container__type__image img {
   object-fit: cover;
   width: 100%;
-  height: 50%;
+  height: 100%;
 }
 .section__project__container__type__description img {
   width: 10%;
+}
+.section__about {
+  background-image: linear-gradient(to left bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/background/Vsz9zvrS4V.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: red;
+  border: 2px solid black;
+  position: relative;
+  width: 100%;
+  height: 100vh;
 }
 
 .container-toggle {
@@ -167,11 +200,9 @@ body {
 }
 
 .btn {
-  color: #00b4ff;
-  font-size: 37px;
-  position: relative;
-  top: 20%;
-  left: 40%;
+  color: gray;
+  font-size: 15px;
+  margin-top: 10%;
   justify-content: space-between;
   width: 100%;
 }
@@ -190,6 +221,12 @@ body {
 }
 
 @media screen and (max-width: 550px) {
+  .container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
   .header {
     display: none;
   }
@@ -202,13 +239,30 @@ body {
   .section__acceuil {
     background-attachment: scroll;
   }
+  .section__acceuil p {
+    font-size: 25px;
+  }
+  .section__acceuil .fa-code {
+    color: #ae0014;
+    font-size: 25px;
+    text-align: center;
+  }
+  .section__project__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 50%;
+  }
+  .section__project__container__type {
+    width: 100%;
+  }
 
   .container-toggle {
     position: fixed;
     left: 3%;
     top: 3%;
     display: block;
-    background-color: #00b4ff;
+    background-color: #484c4e;
     border: 1px solid;
     z-index: 100%;
     padding: 2%;

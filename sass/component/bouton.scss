@@ -17,10 +17,8 @@
 
 
 .btn{
-  @include appareanceicon($coloricon,$sizeicon); 
- position: relative;
- top: 20%;
- left: 40%;
+  @include appareanceicon(gray,$sizeicon); 
+  margin-top: 10%;
  justify-content: space-between;
  width: 100%;
 }

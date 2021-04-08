@@ -49,5 +49,11 @@
 "github":"https://emmie125.github.io/Kinshasa_digital/",
 "see":"https://emmie125.github.io/Formulaire/formulaire.html"
 }
+],
+"about":
+[{
+    "id":1,
+    "description":"I have a bachelor's degree in computer science.I love to build custom web apps and websites. My goal is to help people in their daily life by providing them with my skills."
+    }
 ]
 }

@@ -24,7 +24,8 @@
         &__title{
             margin-top: 2%;
             h1{
-                font-size: 20px;
+                font-size: 15px;
+                
                 color: white;
                 font-family: 'Mukta', sans-serif;
             }
@@ -39,7 +40,7 @@
         img{
             width: 100%;
             border-radius: 100%;
-            border: 7px solid  #141845;
+            // border: 7px solid  #141845;
         }
      }
      &__contact{
@@ -74,11 +75,12 @@
 }
 .section{
     @include positionnement(flex,column);
-    position: absolute;
+    position: relative;
     left: 20%;
     height: auto;
     scroll-behavior: smooth;
     width: 80%;
+    border: 3px solid yellow;
     &__acceuil{
        
         background-image: linear-gradient(to left bottom,rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url('../images/background/wNtjr70rWI.jpg');
@@ -91,42 +93,59 @@
         scroll-behavior: smooth;
         &__biography{
             width: 50%;
-            height: 30%;
-            position: absolute;
-            top: 10%;
+            height: 80%;
+            position: relative;
+            top: 15%;
             left: 30%;
+            padding: 2% 0%;
+           div{
+               justify-content: center;
+               margin-left: 35%;
+           } 
+          
         }
         p{
             font-family: 'beckman';
           color: white;
           font-size: 40px;
           text-align: center;
-          margin-top: 20%;
+          margin-top: 10%;
+         
         }
-        .fas .fa-code{
-            @include appareanceicon(rgb(199, 233, 233),20px); 
+        .fa-code{
+            @include appareanceicon(#ae0014,50px); 
+            text-align: center;
         }
+       
     }
     &__project{
-        scroll-behavior: smooth;
-        border: 3px solid black;
         padding:5% 10%;
-        width:100% !important;
-        height: 50%;
-
-    //  @include  positionnement(flex,row);
+        width:100% ;
+       height: auto;
+        position: relative;
+        @include  positionnement(flex,column);
         &__container{
             margin-top: 5%;
-            // @include  positionnement(flex,row);
-            width: 100% !important;
             border: 1px solid black;
+            @include  positionnement(flex,row);
+            width: 100% ;
+            
             justify-content: space-evenly;
             height: 70%;
             &__type{
                 cursor: pointer;
                 padding: 5%;
                 border: 1px solid white;
-                box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.171) !important;
+                box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.171);
+                @include  positionnement(flex,column);
+                border: 1px solid red;
+                width: 40%;
+                height: 100%;
+                border-radius: 15px;
+                
+                &:hover{
+                    box-shadow: 2px 4px 8px rgba(45, 136, 197, 0.471);      
+                }
 
               // @include  positionnement(flex,row);
                 justify-content: space-between;
@@ -136,12 +155,10 @@
                     img{
                         object-fit: cover;
                         width: 100%;
-                        height: 50%;
+                        height: 100%;
                        
                     }
-                    &:hover{
-                            
-                    }
+                    
                 }
                 &__description{
                     // text-align: center;
@@ -149,9 +166,22 @@
                         width: 10%;
                     }
                 }
+                
 
             }
         } 
+    }
+    &__about{
+      
+        background-image: linear-gradient(to left bottom,rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url('../images/background/Vsz9zvrS4V.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-color: red;
+        border: 2px solid black;
+        position: relative;
+        width: 100%;
+        height: 100vh;
     }
 
 }

@@ -1,4 +1,8 @@
 @media screen and(max-width: $max-width-portable){
+    .container{
+        position: relative;
+        @include  positionnement(flex,column);
+    }
     .header{
         display: none;
     }
@@ -8,6 +12,25 @@
     left: 0%;  
     &__acceuil{
         background-attachment: scroll;
+       p{
+        font-size: 25px;
+       }
+        .fa-code{
+            @include appareanceicon(#ae0014,25px); 
+            text-align: center;
+        }
+       
+    }
+    &__project{
+        &__container{
+            @include  positionnement(flex,column);
+            justify-content: space-evenly;
+            height: 50%;
+            &__type{
+                width: 100%;
+               
+            }
+        }
     }
 }
 

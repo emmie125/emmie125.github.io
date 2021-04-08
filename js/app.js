@@ -32,6 +32,8 @@ const projectBtnSee4 = document.querySelector('#btn__see4');
 const projectBtnGithub4 = document.querySelector('#btn__github4');
 let tabProject=[];
 
+const sectionAbout = document.querySelector('.section__about__description');
+
 window.addEventListener('load',()=>{
     fetch("https://my-json-server.typicode.com/emmie125/emmie125.github.io/identities").then((response)=>{
         return response.json();
@@ -68,8 +70,16 @@ window.addEventListener('load',()=>{
        
 
     });
+    fetch("https://my-json-server.typicode.com/emmie125/emmie125.github.io/about").then((response)=>{
+        return response.json()
+    }).then((data)=>{
+        data.forEach(about => {
+         sectionAbout.textContent = about.description;  
+        });
+    })
 
 })
+
 function projectInitialization(i,tabProject,projectImage,projectTitle,projectDescription,projectBtnSee,projectBtnGithub) {
     console.log(tabProject[i]);
     projectImage.setAttribute('src',tabProject[i].imageprojet);
