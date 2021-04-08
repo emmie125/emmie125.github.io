@@ -110,29 +110,34 @@
     &__project{
         scroll-behavior: smooth;
         border: 3px solid black;
-        padding-left: 10%;
-        width:100%;
-     // @include  positionnement(flex,column);
+        padding:10% 10%;
+        width:100% !important;
+        height: 50%;
+
+    //  @include  positionnement(flex,row);
         &__container{
 
-          // @include  positionnement(flex,column);
+            // @include  positionnement(flex,row);
+            width: 100% !important;
             justify-content: space-between;
             &__type{
-
+                padding: 5%;
                 border: 1px solid white;
-                box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.171);
+                box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.171) !important;
 
               // @include  positionnement(flex,row);
                 justify-content: space-between;
-                height: 30%;
                 &__image{
-                    width: 30%;
+                    width: 100%;
                     img{
                         width: 100%;
                     }
                 }
                 &__description{
-                    text-align: center;
+                    // text-align: center;
+                    img{ 
+                        width: 10%;
+                    }
                 }
 
             }

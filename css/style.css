@@ -118,26 +118,28 @@ body {
 .section__project {
   scroll-behavior: smooth;
   border: 3px solid black;
-  padding-left: 10%;
-  width: 100%;
+  padding: 10% 10%;
+  width: 100% !important;
+  height: 50%;
 }
 .section__project__container {
+  width: 100% !important;
   justify-content: space-between;
 }
 .section__project__container__type {
+  padding: 5%;
   border: 1px solid white;
-  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.171);
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.171) !important;
   justify-content: space-between;
-  height: 30%;
 }
 .section__project__container__type__image {
-  width: 30%;
+  width: 100%;
 }
 .section__project__container__type__image img {
   width: 100%;
 }
-.section__project__container__type__description {
-  text-align: center;
+.section__project__container__type__description img {
+  width: 10%;
 }
 
 .container-toggle {

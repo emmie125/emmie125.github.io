@@ -11,6 +11,7 @@ const projectTitle = document.querySelector('.section__project__container__type_
 const projectDescription = document.querySelector('.section__project__container__type__description p');
 const projectBtnSee = document.querySelector('.btn__see');
 const projectBtnGithub = document.querySelector('.btn__github');
+let tabProject=[];
 
 window.addEventListener('load',()=>{
     fetch("https://my-json-server.typicode.com/emmie125/emmie125.github.io/identities").then((response)=>{
@@ -38,10 +39,13 @@ window.addEventListener('load',()=>{
         return response.json();
     }).then((data)=>{
         data.forEach(project => {
-            projectImage.setAttribute('src',project.imageprojet);
-            projectTitle.textContent=project.nom;
-            projectDescription.textContent=project.description;
+            tabProject.push({nom:project.nom,imageprojet:project.imageprojet ,description:project.description});
             
+            // projectImage.setAttribute('src',project.imageprojet);
+            // projectTitle.textContent=project.nom;
+            // projectDescription.textContent=project.description;
+            console.log(tabProject);
+
         });
     });
 

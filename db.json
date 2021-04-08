@@ -20,8 +20,25 @@
         "id":1,
         "nom":"formulaire",
         "imageprojet":"images/projets/formulaire.jpg",
-        "description":"This project allows to set up an information form, we used"
-    }
-    
+        "description":"This project allows to set up an information form, we used :"
+}, {
+"id":2,
+"nom":"site de kinshasa digital",
+"technologies":{"html":"fa-html5","css":"fa-css3-alt"},
+"imageprojet":"images/projets/Screenshot_2021-04-07 Kinshasa digital.png"
+},
+
+{
+"id":3,
+"nom":"Repertoire contact",
+"technologies":{"html":"fa-html5","css":"fa-css3-alt"},
+"imageprojet":"images/projets/Screenshot_2021-04-07 Kinshasa digital.png"
+},
+{
+"id":4,
+"nom":"site de kinshasa digital",
+"technologies":{"html":"fa-html5","css":"fa-css3-alt"},
+"imageprojet":"images/projets/Screenshot_2021-04-07 Kinshasa digital.png"
+}
 ]
 }
