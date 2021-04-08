@@ -110,17 +110,20 @@
     &__project{
         scroll-behavior: smooth;
         border: 3px solid black;
-        padding:10% 10%;
+        padding:5% 10%;
         width:100% !important;
         height: 50%;
 
     //  @include  positionnement(flex,row);
         &__container{
-
+            margin-top: 5%;
             // @include  positionnement(flex,row);
             width: 100% !important;
-            justify-content: space-between;
+            border: 1px solid black;
+            justify-content: space-evenly;
+            height: 70%;
             &__type{
+                cursor: pointer;
                 padding: 5%;
                 border: 1px solid white;
                 box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.171) !important;
@@ -129,8 +132,15 @@
                 justify-content: space-between;
                 &__image{
                     width: 100%;
+                    // height: 20%;
                     img{
+                        object-fit: cover;
                         width: 100%;
+                        height: 50%;
+                       
+                    }
+                    &:hover{
+                            
                     }
                 }
                 &__description{

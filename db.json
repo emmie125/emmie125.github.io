@@ -19,7 +19,7 @@
     {
         "id":1,
         "nom":"formulaire",
-        "imageprojet":"images/projets/formulaire.jpg",
+        "imageprojet":"images/projets/Screenshot_2021-04-08 formulaire.png",
         "description":"This project allows to set up an information form, we used :",
         "github":"https://github.com/emmie125/Formulaire",
         "see":"https://emmie125.github.io/Formulaire/formulaire.html"
