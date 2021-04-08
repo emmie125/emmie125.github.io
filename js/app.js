@@ -60,12 +60,12 @@ window.addEventListener('load',()=>{
         data.forEach(project => {
             tabProject.push({nom:project.nom,imageprojet:project.imageprojet ,description:project.description,github:project.github,see:project.see});   
         });
-
+        console.log(tabProject);
         projectInitialization(0,tabProject,projectImage1,projectTitle1,projectDescription1,projectBtnSee1,projectBtnGithub1);
         projectInitialization(1,tabProject,projectImage2,projectTitle2,projectDescription2,projectBtnSee2,projectBtnGithub2);
         projectInitialization(2,tabProject,projectImage3,projectTitle3,projectDescription3,projectBtnSee3,projectBtnGithub3);
         projectInitialization(3,tabProject,projectImage4,projectTitle4,projectDescription4,projectBtnSee4,projectBtnGithub4);
-        console.log(tabProject);
+       
 
     });
 
