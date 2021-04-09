@@ -35,7 +35,7 @@ let tabProject=[];
 const sectionAbout = document.querySelector('.section__about__description p');
 
 let containerlanguages = document.createElement('table');
-let sectionSkillsLanguages = document.querySelector('.section__skills__languages');
+let sectionSkillsLanguages = document.querySelector('#section__skills__languages');
 
 window.addEventListener('load',()=>{
     fetch("https://my-json-server.typicode.com/emmie125/emmie125.github.io/identities").then((response)=>{
@@ -84,8 +84,40 @@ window.addEventListener('load',()=>{
         return response.json();
     }).then((data)=>{
         data.forEach(skills => {
+
+           
+            
             if (skills.languages) {
-                console.log(skills.languages);
+                let tr = document.createElement('tr');
+                let tdLanguages = document.createElement('td');
+               
+                for (const languages of skills.languages) {
+
+                    let nom = document.createElement('p');
+                    let containerImage = document.createElement('div')
+                    let icon = document.createElement('img');
+
+                    nom.textContent = languages.nom;
+                    icon.setAttribute('src',languages.icon);
+                    containerImage.appendChild(icon);
+                    containerImage.classList.add('section__skills__languages__container-image')
+
+                    console.log(languages);
+                    
+                    tdLanguages.appendChild(containerImage);
+                    tdLanguages.appendChild(nom);
+                   
+                    tr.appendChild(tdLanguages);
+                   
+                   
+                }
+                containerlanguages.appendChild(tr); 
+            }
+
+            sectionSkillsLanguages.appendChild(containerlanguages);
+
+            if(skills.framework){
+                console.log(skills.framework);
             }
         });
 
