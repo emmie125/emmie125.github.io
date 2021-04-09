@@ -34,6 +34,9 @@ let tabProject=[];
 
 const sectionAbout = document.querySelector('.section__about__description p');
 
+let containerlanguages = document.createElement('table');
+let sectionSkillsLanguages = document.querySelector('.section__skills__languages');
+
 window.addEventListener('load',()=>{
     fetch("https://my-json-server.typicode.com/emmie125/emmie125.github.io/identities").then((response)=>{
         return response.json();
@@ -76,6 +79,16 @@ window.addEventListener('load',()=>{
         data.forEach(about => {
          sectionAbout.textContent = about.description;  
         });
+    })
+    fetch("https://my-json-server.typicode.com/emmie125/emmie125.github.io/skills").then((response)=>{
+        return response.json();
+    }).then((data)=>{
+        data.forEach(skills => {
+            if (skills.languages) {
+                console.log(skills.languages);
+            }
+        });
+
     })
 
 })
