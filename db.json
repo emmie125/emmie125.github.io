@@ -55,5 +55,16 @@
     "id":1,
     "description":"I have a bachelor's degree in computer science.I love to build custom web apps and websites. My goal is to help people in their daily life by providing them with my skills."
     }
-]
+],
+"skills":[
+    {
+    "id":1,
+     "languages":
+     [
+         {
+             "sass":"images/icon/sass-brands.svg","less":"images/icon/less-brands.svg","html":"images/icon/html5-brands.svg","js":"images/icon/js-square-brands.svg","java":"images/icon/java-seeklogo.com.svg"
+            }
+         
+        ]
+    }]
 }

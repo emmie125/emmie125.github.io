@@ -32,7 +32,7 @@ const projectBtnSee4 = document.querySelector('#btn__see4');
 const projectBtnGithub4 = document.querySelector('#btn__github4');
 let tabProject=[];
 
-const sectionAbout = document.querySelector('.section__about__description');
+const sectionAbout = document.querySelector('.section__about__description p');
 
 window.addEventListener('load',()=>{
     fetch("https://my-json-server.typicode.com/emmie125/emmie125.github.io/identities").then((response)=>{

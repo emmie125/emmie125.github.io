@@ -66,7 +66,7 @@
             color: white; 
             padding: 7% 10% 3% 9%; 
             font-size: 20px;
-            &:hover{
+            &:hover,&:active{
                 background-color: #00b4ff!important;
             } 
         }
@@ -81,6 +81,9 @@
     scroll-behavior: smooth;
     width: 80%;
     border: 3px solid yellow;
+    h2{
+       @include stylisationtitre;
+    }
     &__acceuil{
        
         background-image: linear-gradient(to left bottom,rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url('../images/background/wNtjr70rWI.jpg');
@@ -118,15 +121,44 @@
         }
        
     }
+    &__about{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        position: relative;
+        width: 100%;
+        padding: 5%;
+        &__description{
+            width: 100%;
+            margin: 7%;
+            font-size: 30px;
+            @include  positionnement(flex,row);
+            
+           p{
+               width: 50%;
+            text-align: center;
+           }
+           div{
+               width: 40%;
+               img{
+                   width: 100%;
+                   opacity: 0.7;
+               }
+           }
+        }
+    }
+
     &__project{
-        padding:5% 10%;
+        color: white;
+        background-color: #141845;
+        background-image: linear-gradient(to left bottom,rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7));
+        padding:5% 5%;
         width:100% ;
-       height: auto;
+        height: auto;
         position: relative;
         @include  positionnement(flex,column);
         &__container{
             margin-top: 5%;
-            border: 1px solid black;
             @include  positionnement(flex,row);
             width: 100% ;
             
@@ -135,16 +167,17 @@
             &__type{
                 cursor: pointer;
                 padding: 5%;
-                border: 1px solid white;
+                border: 1px solid #00b4ff;
                 box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.171);
                 @include  positionnement(flex,column);
-                border: 1px solid red;
                 width: 40%;
                 height: 100%;
                 border-radius: 15px;
                 
                 &:hover{
-                    box-shadow: 2px 4px 8px rgba(45, 136, 197, 0.471);      
+                    // background-color: #0063ca;
+                    // border: 1px solid #0063ca;
+                    box-shadow: 0px 0px 10px -2px rgb(48, 153, 223);      
                 }
 
               // @include  positionnement(flex,row);
@@ -171,17 +204,19 @@
             }
         } 
     }
-    &__about{
-      
-        background-image: linear-gradient(to left bottom,rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url('../images/background/Vsz9zvrS4V.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-color: red;
-        border: 2px solid black;
-        position: relative;
+    &__skills{
+        padding: 5%;
         width: 100%;
-        height: 100vh;
+        @include  positionnement(flex,column); 
+        &__header{
+            @include  positionnement(flex,row); 
+            justify-content: space-around;
+            margin-top: 3%;
+            a:hover{
+                padding-bottom: 2%;
+                border-bottom: 3px solid #00b4ff;
+            }
+        }
     }
-
+   
 }
