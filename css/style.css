@@ -225,47 +225,33 @@ body {
   border: 1px solid black;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
 }
 .section__skills__languages__container {
-  width: 45%;
+  width: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  border: 1px solid yellow;
-  height: 10%;
+  border: 1px solid green;
+  height: auto;
 }
-.section__skills__languages__container__image {
-  width: 30%;
-  border: 1px solid red;
-}
-.section__skills__languages img {
-  width: 100%;
-}
-.section__skills__languages p {
-  text-align: center;
-}
-
-.containerSkillsType .cardCircle {
+.section__skills__languages__container .cardCircle {
+  border: 3px solid purple;
   position: relative;
-  width: 250px;
+  width: 100%;
   background-image: linear-gradient(0deg, #1b1b1b, #222, #1b1b1b);
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 300px;
+  height: 100%;
   border-radius: 4px;
   text-align: center;
   overflow: hidden;
   transition: 0.5s;
 }
-
-.containerSkillsType .cardCircle:hover {
+.section__skills__languages__container .cardCircle:hover {
   transform: translateY(-10px);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
 }
-
-.containerSkillsType .cardCircle::before {
+.section__skills__languages__container .cardCircle::before {
   content: "";
   position: absolute;
   top: 0;
@@ -276,8 +262,7 @@ body {
   pointer-events: none;
   z-index: 1;
 }
-
-.containerPercent {
+.section__skills__languages__container .containerPercent {
   position: relative;
   width: 150px;
   height: 150px;
@@ -286,8 +271,7 @@ body {
   background-color: #222;
   z-index: 1000;
 }
-
-.containerPercent .number {
+.section__skills__languages__container .containerPercent .containerNumberPercent {
   position: absolute;
   top: 0;
   left: 0;
@@ -298,28 +282,23 @@ body {
   align-items: center;
   border-radius: 50%;
 }
-
-.containerPercent .number h2 {
+.section__skills__languages__container .containerPercent .containerNumberPercent h3 {
   color: #777;
   font-weight: 700;
   font-size: 40px;
   transition: 0.5s;
 }
-
-.cardCircle:hover .containerPercent .number h2 {
+.section__skills__languages__container .cardCircle:hover .containerPercent .containerNumberPercent h3 {
   color: white;
   font-size: 50px;
 }
-
-.containerPercent .number h2 span {
+.section__skills__languages__container .containerPercent .containerNumberPercent h3 span {
   font-size: 24px;
 }
-
-.cardCircle:hover .containerPercent .number h2 span {
+.section__skills__languages__container .cardCircle:hover .containerPercent .containerNumberPercent h3 span {
   color: white;
 }
-
-.containerBox h2 {
+.section__skills__languages__container .containerBox h3 {
   position: relative;
   color: #777;
   font-weight: 700;
@@ -328,35 +307,29 @@ body {
   transition: 0.5s;
   margin-top: 20px;
 }
-
-.cardCircle:hover .box h2 {
+.section__skills__languages__container .cardCircle:hover .containerBox h3 {
   color: white;
 }
-
-svg {
+.section__skills__languages__container svg {
   position: relative;
   width: 150px;
   height: 150px;
   z-index: 1000;
+  border: 2px solid red;
 }
-
-svg circle {
+.section__skills__languages__container svg circle {
   width: 100%;
   height: 100%;
-  fill: none;
+  fill: yellow;
   stroke: black;
   stroke-width: 10;
   stroke-linecap: round;
   transform: translate(5px, 5px);
 }
-
-svg circle:nth-child(2) {
+.section__skills__languages__container svg circle:nth-child(2) {
   stroke-dasharray: 440;
   /* stroke-dashoffset: calc( 440 -(440 * 90) / 100); */
   stroke-dashoffset: 44;
-}
-
-.cardCircle svg circle:nth-child(2) {
   stroke: green;
 }
 
@@ -453,7 +426,7 @@ svg circle:nth-child(2) {
     display: block;
     background-color: #484c4e;
     border: 1px solid;
-    z-index: 100%;
+    z-index: 1000000;
     padding: 2%;
   }
   .container-toggle label {

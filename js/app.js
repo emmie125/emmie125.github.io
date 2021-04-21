@@ -107,24 +107,37 @@ window.addEventListener('load',()=>{
                     cardCircle.classList.add('cardCircle');
                     containerBox.classList.add('containerBox');
                     
-                    circle1.setAttribute('cx',"70");
-                    circle1.setAttribute('cy',"70");
-                    circle1.setAttribute('r',"70");
-                    circle2.setAttribute('cx',"70");
-                    circle2.setAttribute('cy',"70");
-                    circle2.setAttribute('r',"70");
+                    circle1.setAttribute('cx',"100");
+                    circle1.setAttribute('cy',"100");
+                    circle1.setAttribute('r',"100");
+                    circle2.setAttribute('cx',"100");
+                    circle2.setAttribute('cy',"100");
+                    circle2.setAttribute('r',"100");
 
 
                     nom.textContent = languages.nom;
                     number.textContent = languages.percent;
-                    progressNumber = 400-(400*languages.percent)/100;
-                    console.log(Number(languages.percent));
+                    //progressNumber = 400-((400*languages.percent)/100);
+                    //console.log(progressNumber);
                     unityNumber.textContent="%";
-                    number.appendChild(unityNumber)
+                    //circle2.style.strokeDasharray = '440';
+                    circle2.style.strokeDashoffset=progressNumber;
+                   
 
                     
                     containerSkillsType.classList.add('section__skills__languages__container');
+                    number.appendChild(unityNumber);
                     containerSkillsType.appendChild(nom);
+                    svg.appendChild(circle2);
+                    svg.appendChild(circle1);
+                    containerNumberPercent.appendChild(number)
+                    containerPercent.appendChild(svg);
+                    containerPercent.appendChild( containerNumberPercent);
+                    containerBox.appendChild(containerPercent);
+                    containerBox.appendChild(nom);
+                    cardCircle.appendChild(containerBox);
+                    containerSkillsType.appendChild(cardCircle);
+
                     console.log(languages);
                     sectionSkillsLanguages.appendChild(containerSkillsType);
 
