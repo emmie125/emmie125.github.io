@@ -60,21 +60,23 @@
     {
      "languages":
      [
-         { "id":1,"nom":"sass","icon":"images/icon/sass-brands.svg"},
-         {"id":2,"nom":"less","icon":"images/icon/less-brands.svg"},
-         {"id":3,"nom" :"html","icon" :"images/icon/html5-brands.svg"},
-         {"id":4,"nom":"js", "icon":"images/icon/js-square-brands.svg"},
-         {"id":5,"nom":"java","icon": "images/icon/java-seeklogo.com.svg"}
+         { "id":1,"nom":"sass","percent":60},
+         {"id":2,"nom":"less","percent":40},
+         {"id":3,"nom" :"html","percent":70},
+         {"id":4,"nom":"js","percent":60},
+         {"id":5,"nom":"java","percent":60},
+         {"id":6,"nom":"arduino","percent":40}
          
         ],
         "framework":
         [
-            { "id":1,"nom":"sass","icon":"images/icon/sass-brands.svg"},
-            {"id":2,"nom":"less","icon":"images/icon/less-brands.svg"},
-            {"id":3,"nom" :"html","icon" :"images/icon/html5-brands.svg"},
-            {"id":4,"nom":"js", "icon":"images/icon/js-square-brands.svg"},
-            {"id":5,"nom":"java","icon": "images/icon/java-seeklogo.com.svg"}
-            
+            { "id":1,"nom":"semantic","icon":"images/icon/semantic-ui-seeklogo.com.svg"}
+           ],
+           "tools":
+        [
+            { "id":1,"nom":"windows","icon":"images/icon/windows.eps"},
+            { "id":1,"nom":"Ubuntu","icon":"images/icon/ubuntu-brands.svg"},
+            { "id":1,"nom":"Ubuntu","icon":"images/icon/github-brands.svg"}
            ]
     }]
 }

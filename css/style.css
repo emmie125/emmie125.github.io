@@ -177,7 +177,6 @@ body {
   height: 70%;
 }
 .section__project__container__type {
-  cursor: pointer;
   padding: 5%;
   border: 1px solid #00b4ff;
   box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.171);
@@ -190,6 +189,7 @@ body {
 }
 .section__project__container__type:hover {
   box-shadow: 0px 0px 10px -2px #3099df;
+  transform: translateY(-20px);
 }
 .section__project__container__type__image {
   width: 100%;
@@ -221,15 +221,143 @@ body {
 }
 .section__skills__languages {
   width: 100%;
-  height: 50%;
+  height: 100%;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.section__skills__languages__container {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: 1px solid yellow;
+  height: 10%;
+}
+.section__skills__languages__container__image {
+  width: 30%;
   border: 1px solid red;
-  background-color: gray;
 }
-.section__skills__languages__container-image {
-  width: 5%;
-}
-.section__skills__languages table {
+.section__skills__languages img {
   width: 100%;
+}
+.section__skills__languages p {
+  text-align: center;
+}
+
+.containerSkillsType .cardCircle {
+  position: relative;
+  width: 250px;
+  background-image: linear-gradient(0deg, #1b1b1b, #222, #1b1b1b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  border-radius: 4px;
+  text-align: center;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.containerSkillsType .cardCircle:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+.containerSkillsType .cardCircle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.03);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.containerPercent {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 50px #000;
+  background-color: #222;
+  z-index: 1000;
+}
+
+.containerPercent .number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.containerPercent .number h2 {
+  color: #777;
+  font-weight: 700;
+  font-size: 40px;
+  transition: 0.5s;
+}
+
+.cardCircle:hover .containerPercent .number h2 {
+  color: white;
+  font-size: 50px;
+}
+
+.containerPercent .number h2 span {
+  font-size: 24px;
+}
+
+.cardCircle:hover .containerPercent .number h2 span {
+  color: white;
+}
+
+.containerBox h2 {
+  position: relative;
+  color: #777;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 1px;
+  transition: 0.5s;
+  margin-top: 20px;
+}
+
+.cardCircle:hover .box h2 {
+  color: white;
+}
+
+svg {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  z-index: 1000;
+}
+
+svg circle {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: black;
+  stroke-width: 10;
+  stroke-linecap: round;
+  transform: translate(5px, 5px);
+}
+
+svg circle:nth-child(2) {
+  stroke-dasharray: 440;
+  /* stroke-dashoffset: calc( 440 -(440 * 90) / 100); */
+  stroke-dashoffset: 44;
+}
+
+.cardCircle svg circle:nth-child(2) {
+  stroke: green;
 }
 
 .container-toggle {
@@ -287,25 +415,35 @@ body {
     position: absolute;
     left: 0%;
   }
+  .section p {
+    font-size: 25px;
+  }
   .section__acceuil {
     background-attachment: scroll;
-  }
-  .section__acceuil p {
-    font-size: 25px;
   }
   .section__acceuil .fa-code {
     color: #ae0014;
     font-size: 25px;
     text-align: center;
   }
+  .section__about__description_illustration {
+    display: none;
+  }
   .section__project__container {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 50%;
+    align-items: center;
+    height: 20%;
   }
   .section__project__container__type {
-    width: 100%;
+    width: 70%;
+    height: auto;
+    margin-bottom: 5%;
+  }
+  .section__project__container__type:hover {
+    box-shadow: none;
+    transform: none;
   }
 
   .container-toggle {

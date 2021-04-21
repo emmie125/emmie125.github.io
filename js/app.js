@@ -34,11 +34,11 @@ let tabProject=[];
 
 const sectionAbout = document.querySelector('.section__about__description p');
 
-let containerlanguages = document.createElement('table');
+//let containerlanguages = document.createElement('div');
 let sectionSkillsLanguages = document.querySelector('#section__skills__languages');
 
 window.addEventListener('load',()=>{
-    fetch("https://my-json-server.typicode.com/emmie125/emmie125.github.io/identities").then((response)=>{
+    fetch(" https://my-json-server.typicode.com/emmie125/emmie125.github.io/identities").then((response)=>{
         return response.json();
     }).then((response)=>{
         for (const identity of response) {
@@ -85,40 +85,60 @@ window.addEventListener('load',()=>{
     }).then((data)=>{
         data.forEach(skills => {
 
-           
-            
             if (skills.languages) {
-                let tr = document.createElement('tr');
-                let tdLanguages = document.createElement('td');
-               
+                
                 for (const languages of skills.languages) {
+                    let containerSkillsType = document.createElement('div');
+                    let nom = document.createElement('h3');
+                    let containerBox = document.createElement('div');
+                    let circle1 = document.createElement('circle');
+                    let circle2 = document.createElement('circle');
+                    let svg = document.createElement('svg');
+                    let cardCircle= document.createElement('div');
+                    let containerPercent= document.createElement('div')
+                    let containerNumberPercent = document.createElement('div');
+                    let number = document.createElement('h3');
+                    let unityNumber = document.createElement('span')
+                    let progressNumber;
+                  
 
-                    let nom = document.createElement('p');
-                    let containerImage = document.createElement('div')
-                    let icon = document.createElement('img');
+                    containerNumberPercent.classList.add('containerNumberPercent');
+                    containerPercent.classList.add('containerPercent');
+                    cardCircle.classList.add('cardCircle');
+                    containerBox.classList.add('containerBox');
+                    
+                    circle1.setAttribute('cx',"70");
+                    circle1.setAttribute('cy',"70");
+                    circle1.setAttribute('r',"70");
+                    circle2.setAttribute('cx',"70");
+                    circle2.setAttribute('cy',"70");
+                    circle2.setAttribute('r',"70");
+
 
                     nom.textContent = languages.nom;
-                    icon.setAttribute('src',languages.icon);
-                    containerImage.appendChild(icon);
-                    containerImage.classList.add('section__skills__languages__container-image')
+                    number.textContent = languages.percent;
+                    progressNumber = 400-(400*languages.percent)/100;
+                    console.log(Number(languages.percent));
+                    unityNumber.textContent="%";
+                    number.appendChild(unityNumber)
 
-                    console.log(languages);
                     
-                    tdLanguages.appendChild(containerImage);
-                    tdLanguages.appendChild(nom);
-                   
-                    tr.appendChild(tdLanguages);
-                   
-                   
+                    containerSkillsType.classList.add('section__skills__languages__container');
+                    containerSkillsType.appendChild(nom);
+                    console.log(languages);
+                    sectionSkillsLanguages.appendChild(containerSkillsType);
+
+                    
+
                 }
-                containerlanguages.appendChild(tr); 
+               
             }
-
-            sectionSkillsLanguages.appendChild(containerlanguages);
-
+           
+           
             if(skills.framework){
                 console.log(skills.framework);
             }
+
         });
 
     })
