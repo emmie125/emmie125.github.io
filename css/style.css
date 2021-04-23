@@ -127,7 +127,7 @@ body {
   margin-top: 10%;
 }
 .section__acceuil .fa-code {
-  color: #abae00;
+  color: #0077cb;
   font-size: 50px;
   text-align: center;
 }
@@ -173,7 +173,7 @@ body {
   display: flex;
   flex-direction: row;
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: space-between;
   height: 70%;
 }
 .section__project__container__type {
@@ -232,12 +232,14 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
   border: 1px solid green;
   height: auto;
 }
 .section__skills__languages__container .card {
   position: relative;
   width: 250px;
+  background-image: linear-gradient(to left bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
   background-color: #141845;
   display: flex;
   justify-content: center;
@@ -247,6 +249,7 @@ body {
   text-align: center;
   overflow: hidden;
   transition: 0.5s all linear;
+  margin-bottom: 5%;
 }
 .section__skills__languages__container .card:hover {
   transform: translateY(-10px);
