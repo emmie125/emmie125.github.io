@@ -1,171 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="Semantic-UI/Semantic-UI-CSS-master/semantic.css">
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
-    <link href = "https://fonts.googleapis.com/css2? family = Kiwi + Maru: wght @ 300 & display = swap "rel =" feuille de style ">
-    <link rel="stylesheet" href="./css/style.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="Semantic-UI/Semantic-UI-CSS-master/semantic.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2? family = Kiwi + Maru: wght @ 300 & display = swap "
+      rel=" feuille de style "
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
     <title>Portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-            <div class="container-toggle">
-                <label for="nav-checkbox" class="toggle-lable"><i class="fas fa-bars"></i></label>
-                <input type="checkbox" name="nav-checkbox" id="nav-checkbox" class="toggle">
+      <header class="header">
+        <nav>
+          <div class="nav__logo">EMUK<span>.</span></div>
+          <div class="toggle-menu">
+            <label for="toggle" class="toggle-lable"
+              ><i class="fas fa-bars"></i
+            ></label>
+            <input type="checkbox" name="toggle" id="toggle" />
+          </div>
+          <div class="nav__menu">
+            <p><a href="#">Home</a></p>
+            <p><a href="#projects">Projects</a></p>
+            <p><a href="#skills">Skills</a></p>
+            <p><a href="#about">About</a></p>
+          </div>
+        </nav>
+      </header>
+      <section class="container__section">
+        <section class="container__section__home" id="home">
+          <div class="container__section__home__identity">
+            <h1>Emmanuella MULANGA MUKADI</h1>
+          </div>
+          <div class="container__section__home__description">
+            <p>
+              Hi guys, welcome! I'm a web developer and a heavy application
+              developer
+            </p>
+          </div>
+          <div class="container__section__home__cv">
+            <p><a href="#" class="primary">My CV</a></p>
+            <p><a href="#projects" class="secondary">My projects</a></p>
+          </div>
+          <div class="container__section__home__reseau">
+            <p>
+              <a id="iconEnvelope" href="#"><i class="fas fa-envelope"></i></a>
+            </p>
+            <p>
+              <a id="iconLinkedin" href="#"><i class="fab fa-linkedin"></i></a>
+            </p>
+            <p>
+              <a id="iconFacebook" href="#"
+                ><i class="fab fa-facebook-square"></i
+              ></a>
+            </p>
+            <p>
+              <a id="iconGitgub" href="#"><i class="fab fa-github"></i></a>
+            </p>
+          </div>
+        </section>
+        <section class="container__section__projects" id="projects">
+          <div class="titre">
+            <h2>My Projects</h2>
+            <div class="soulignement"></div>
+          </div>
+          <div class="container__section__projects__container-card">
+            <div class="container__section__projects__card">
+              <div class="container__section__projects__card__container-img">
+                <img src="./images/projets/formulaire.jpg" alt="formulaire" />
+              </div>
+              <div class="container__section__projects__card__title">
+                <h3>formulaire</h3>
+              </div>
+              <div class="container__section__projects__card__description">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Voluptates tenetur, ut voluptatum vero at explicabo sit maxime
+                  exercitationem soluta unde quam illo rerum dolorum hic nam
+                  dolor error, dicta qui.
+                </p>
+              </div>
             </div>
-            <header class="header">
-               
-                <nav class="">
-                    
-                    <div class="header__profil">
-                        <div class="header__profil__image">
-                            <img src="./images/icon/iconfinder_icon-ios7-contact-outline_211731.png" alt="image de profil">
-                        </div>
-                        <div class="header__profil__title">
-                            <h1>Emmanuella Mulanga Mukadi</h1>
-                        </div>
-                    </div>
-                    <div class="header__contact">
-                    
-                         <a href="#" id="header__contact__instagram"><i class="fab fa-instagram-square"></i></a>
-                        <a href="#" id="header__contact__facebook"><i class="fab fa-facebook"></i></a>
-                        <a href="#" id="header__contact__gmail"> <i class="fas fa-envelope"></i></a>
-                    
-                    </div>
-                    <div class="header__menu">
-                            <a href="#section__about">About me</a>
-                            <a href="#section__project">Projects</a>
-                            <a href="#" >Skills</a>
-                            <a href="#" >Contact</a>
-                       
-                    </div>
-                </nav>
-            </header> 
-           
-            <div class="section">
-                
-                <div class="section__acceuil" id="section__acceuil">
-                   <div class="section__acceuil__biography">
-                        <p></p> 
-                        <div><i class="fas fa-code"></i><i class="fas fa-code "></i></div>
-                   </div>
-                </div> 
-                <div class="section__about" id="section__about">
-                    <h2 class="section__about__title">About me</h2>
-                    <div class="section__about__description">
-                        <p></p>
-                        <div class="section__about__description_illustration"><img src="./images/background/undraw_programmer_imem.svg" alt=""></div>
-                    </div>
-                         
-                 </div>
-                <div class="section__project" id="section__project">
-                    <h2>Projects</h2>
-                    <p>I am very happy to present you my projects</p>
-                    <div class=" section__project__container ">
-                        <div class="section__project__container__type ">
-                          <div class="section__project__container__type__image ">
-                            <img id="image-Project1" src="">
-                          </div>
-                          <div class="section__project__container__type__title ">
-                                <h3 id="title-Project1"></h3>
-                                <div class="section__project__container__type__description ">
-                                <p id="description-Projet1"></p>
-                                <img src="./images/icon/html5-brands.svg" alt="images html">
-                                <img src="./images/icon/css3-alt-brands.svg" alt="images css">
-                                </div>
-                          </div>
-                          <div class="btn extra content">
-                            <a href="#" class="btn__see " id="btn__see1"><i class="fas fa-share"></i></a>
-                            <a href="#" class="btn__github" id="btn__github1"><i class="fab fa-github"></i></a>
-                          </div>
-                        </div>
-                        <div class="section__project__container__type ">
-                            <div class="section__project__container__type__image ">
-                              <img id="image-Project2" src="./images/background/MIDWHWxUAW.jpg">
-                            </div>
-                            <div class="section__project__container__type__title ">
-                                  <h3 id="title-Project2"></h3>
-                                  <div class="section__project__container__type__description ">
-                                  <p id="description-Projet2"></p>
-                                  <img src="./images/icon/html5-brands.svg" alt="images html">
-                                  <img src="./images/icon/css3-alt-brands.svg" alt="images css">
-                                  </div>
-                            </div>
-                            <div class="btn extra content">
-                              <a href="#" class="btn__see " id="btn__see2"><i class="fas fa-share"></i></a>
-                              <a href="#" class="btn__github" id="btn__github2"><i class="fab fa-github"></i></a>
-                            </div>
-                          </div>
-                    </div>
-                    <div class=" section__project__container ">
-                        <div class="section__project__container__type ">
-                          <div class="section__project__container__type__image">
-                            <img id="image-Project3" src="">
-                          </div>
-                          <div class="section__project__container__type__title ">
-                                <h3 id="title-Project3"></h3>
-                                <div class="section__project__container__type__description ">
-                                <p id="description-Projet3"></p>
-                                <img src="./images/icon/html5-brands.svg" alt="images html">
-                                <img src="./images/icon/css3-alt-brands.svg" alt="images css">
-                                </div>
-                          </div>
-                          <div class="btn extra content">
-                            <a href="#" class="btn__see " id="btn__see3"><i class="fas fa-share"></i></a>
-                            <a href="#" class="btn__github" id="btn__github3"><i class="fab fa-github"></i></a>
-                          </div>
-                        </div>
-                        <div class="section__project__container__type ">
-                            <div class="section__project__container__type__image ">
-                              <img id="image-Project4"src="">
-                            </div>
-                            <div class="section__project__container__type__title ">
-                                  <h3 id="title-Project4"></h3>
-                                  <div class="section__project__container__type__description ">
-                                  <p id="description-Projet4"></p>
-                                  <img src="./images/icon/html5-brands.svg" alt="images html">
-                                  <img src="./images/icon/css3-alt-brands.svg" alt="images css">
-                                  </div>
-                            </div>
-                            <div class="btn extra content">
-                              <a href="#" class="btn__see " id="btn__see4"><i class="fas fa-share"></i></a>
-                              <a href="#" class="btn__github" id="btn__github4"><i class="fab fa-github"></i></a>
-                            </div>
-                          </div>
-                        </div>
+            <div class="container__section__projects__card">
+              <div class="container__section__projects__card__container-img">
+                <img src="./images/projets/formulaire.jpg" alt="formulaire" />
+              </div>
+              <div class="container__section__projects__card__title">
+                <h3>formulaire</h3>
+              </div>
+              <div class="container__section__projects__card__description">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Voluptates tenetur, ut voluptatum vero at explicabo sit maxime
+                  exercitationem soluta unde quam illo rerum dolorum hic nam
+                  dolor error, dicta qui.
+                </p>
+              </div>
+            </div>
+            <div class="container__section__projects__card">
+              <div class="container__section__projects__card__container-img">
+                <img src="./images/projets/formulaire.jpg" alt="formulaire" />
+              </div>
+              <div class="container__section__projects__card__title">
+                <h3>formulaire</h3>
+              </div>
+              <div class="container__section__projects__card__description">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Voluptates tenetur, ut voluptatum vero at explicabo sit maxime
+                  exercitationem soluta unde quam illo rerum dolorum hic nam
+                  dolor error, dicta qui.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="container__section__skills" id="skills">
+          <div class="titre">
+            <h2>Skills</h2>
+            <div class="soulignement"></div>
+          </div>
+          <div class="container__section__skills__category">
+            <div class="container__section__skills__category__languages">
+              <h3>Languages</h3>
+              <div
+                class="
+                  container__section__skills__category__languages__progress
+                "
+              >
+                <div
+                  class="
+                    container__section__skills__category__languages__progress__percent
+                  "
+                >
+                  <h4>HTML</h4>
+                  <h4>70%</h4>
                 </div>
-                   
-                <div class="section__skills">
-                    <h2 class="section__skills__title">Skills</h2>
-                    <div class="section__skills__header">
-                      <a href="section__skills__languages">Languages</a>
-                      <a href="section__skills__famework">Framework</a>
-                      <a href="section__skills__tools">Tools</a>
-                    </div>  
+                <div
+                  class="
+                    container__section__skills__category__languages__progress__bar
+                  "
+                >
+                  <div
+                    class="
+                      container__section__skills__category__languages__progress__bar__dynamic
+                    "
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="container__section__skills__category__languages">
+              <h3>Languages</h3>
+              <div
+                class="
+                  container__section__skills__category__languages__progress
+                "
+              >
+                <div
+                  class="
+                    container__section__skills__category__languages__progress__percent
+                  "
+                >
+                  <h4>HTML</h4>
+                  <h4 class="percent">70%</h4>
+                </div>
+                <div
+                  class="
+                    container__section__skills__category__languages__progress__bar
+                  "
+                >
+                  <div
+                    class="
+                      container__section__skills__category__languages__progress__bar__dynamic
+                    "
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="container__section__about" id="about">
+          <div class="titre">
+            <h2>About me</h2>
+            <div class="soulignement"></div>
+          </div>
 
-                    <div class="section__skills__languages" id="section__skills__languages">
-                        <div class="section__skills__languages__container">
-                          
-                      </div>
-                    </div>
-                    <div class="section__skills__famework" id="section__skills__famework">
-                    </div>
-                    <div class="section__skills__tools" id="section__skills__tools">
-                    </div>
+          <div class="container__section__about__information">
+            <div class="container__section__about__information__profil">
+              <img
+                src="./images/profil/IMG-20210512-WA0018.jpg"
+                alt="images profils"
+              />
+            </div>
+            <div class="container__section__about__information__description">
+              <div class="container__section__about__information__description__illustration">
+                <div>
+                  <p><i class="fas fa-thumbtack"></i></p>
+                  <p>DRC Kinshasa</p>
                 </div>
-               
-            </div>       
-        </div> 
-    <div class="btn__orientation">
-        <a class="slide"><i class="fas fa-arrow-alt-circle-up"></i></a>
-    </div> 
+                <div>
+                  <p><i class="fas fa-university"></i></p>
+                  <p>University of Kinshasa</p>
+                </div>
+                <div>
+                  <p><i class="fas fa-envelope"></i></p>
+                  <p><a href="mailto:mulangaemmanuella@gmail.com">mulangaemmanuella@gmail.com</a></p>
+                </div>
+                <div>
+                  <p><i class="fas fa-phone-square-alt"></i></p>
+                  <p><a href="tel:+24382637009">+234826370009</a></p>
+                </div>
+              </div>
+              <p>
+                My name is Emmanuella, I was born in Kinshasa and I have spent
+                my entire student life there. I like discovery and technology
+                that's why I graduated in computer science since 2018. Being
+                passionate about this profession, I also undertook a training
+                course in the development of mobile web applications of which I
+                am a holder a simplon certificate.
+              </p>
+            </div>
+          </div>
+        </section>
+      </section>
+    </div>
     <script src="./js/scripts.js"></script>
     <script src="./js/app.js"></script>
-    
-</body>
+  </body>
 </html>

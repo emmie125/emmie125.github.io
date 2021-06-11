@@ -35,7 +35,7 @@ let tabProject=[];
 const sectionAbout = document.querySelector('.section__about__description p');
 
 //let containerlanguages = document.createElement('div');
-let sectionSkillsContainer = document.querySelector('.section__skills__languages__container');
+const skillsCategory = document.querySelector('.container__section__skills__category');
 
 window.addEventListener('load',()=>{
     fetch(" https://my-json-server.typicode.com/emmie125/emmie125.github.io/identities").then((response)=>{
@@ -83,77 +83,8 @@ window.addEventListener('load',()=>{
     fetch("https://my-json-server.typicode.com/emmie125/emmie125.github.io/skills").then((response)=>{
         return response.json();
     }).then((data)=>{
-        data.forEach(skills => {
-
-            if (skills.languages) {
-                
-                for (const languages of skills.languages) {
-                   
-                    let nom = document.createElement('h3');
-                    let box = document.createElement('div');
-                    let circle1 = document.createElement('circle');
-                    let circle2 = document.createElement('circle');
-                    let svg = document.createElement('svg');
-                    let card= document.createElement('div');
-                    let percent= document.createElement('div')
-                    let numberContainer = document.createElement('div');
-                    let number = document.createElement('h3');
-                    let unityNumber = document.createElement('span')
-                    let progressNumber;
-                  
-
-                    numberContainer.classList.add('number');
-                    percent.classList.add('percent');
-                    card.classList.add('card');
-                    box.classList.add('box');
-                    
-                    circle1.setAttribute('cx',"60");
-                    circle1.setAttribute('cy',"60");
-                    circle1.setAttribute('r',"60");
-                    circle2.setAttribute('cx',"60");
-                    circle2.setAttribute('cy',"60");
-                    circle2.setAttribute('r',"60");
-
-
-                    nom.textContent = languages.nom;
-                    number.textContent = languages.percent;
-                    //progressNumber = 400-((400*languages.percent)/100);
-                    //console.log(progressNumber);
-                    unityNumber.textContent="%";
-                    //circle2.style.strokeDasharray = '440';
-                    //circle2.style.strokeDashoffset=progressNumber;
-                   
-
-                    
-                    //containerSkillsType.classList.add('section__skills__languages__container');
-                    number.appendChild(unityNumber);
-                    numberContainer.appendChild(number);
-                    svg.appendChild(circle1);
-                    svg.appendChild(circle2);
-                    percent.appendChild(svg);
-                    percent.appendChild(numberContainer);
-                    box.appendChild(percent);
-                    box.appendChild(nom);
-                    card.appendChild(box);
-                    sectionSkillsContainer.appendChild(card);
-
-                    console.log(languages);
-                    //sectionSkillsLanguages.appendChild(containerSkillsType);
-
-                    
-
-                }
-               
-            }
-           
-           
-            if(skills.framework){
-                console.log(skills.framework);
-            }
-
-        });
-
-    })
+        renderSkills(data);
+        })
 
 })
 
@@ -166,4 +97,53 @@ function projectInitialization(i,tabProject,projectImage,projectTitle,projectDes
     console.log(tabProject[i].github);
     projectBtnGithub.setAttribute('href',tabProject[i].github);
 
+}
+function renderSkills(data){
+    for (const key in data[0]) {
+        console.log(key);
+       for (const element of key) {
+            console.log(element);
+       }
+    }
+
+
+}
+function renderSkillsElement(skills) {
+    if (skills.languages) {
+        const title = document.createElement('h3');
+        for (const languages of skills.languages) {
+            createHMTLElements(title,languages);
+
+        }  
+    }
+   
+   
+    if(skills.framework){
+        console.log(skills.framework);
+    }
+
+}
+function createHMTLElements(title,languages) {
+
+        const categoryTypes= document.createElement('div');
+        const skillsProgress = document.createElement('div');
+        const progressBar = document.createElement('div');
+        const progressBarDynamic= document.createElement('div');
+        const progressPercent = document.createElement('div')
+        const percent = document.createElement('h4');
+        const titlePercent = document.createElement('h4');
+
+        categoryTypes.classList.add('container__section__skills__category__languages');
+        skillsProgress.classList.add('container__section__skills__category__languages__progress');
+        progressBar.classList.add('container__section__skills__category__languages__progress__bar');
+        progressBarDynamic.classList.add('container__section__skills__category__languages__progress__bar__dynamic');
+        progressPercent.classList.add('container__section__skills__category__languages__progress__percent');
+
+        
+
+
+        skillsCategory.appendChild(categoryTypes);
+
+        console.log(languages);
+   
 }
