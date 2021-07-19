@@ -11,12 +11,7 @@
  
 }
 
-.btn {
-  @include appareanceicon(gray, $sizeicon);
-  margin-top: 10%;
-  justify-content: space-between;
-  width: 100%;
-}
+
 .btn__orientation {
   @include appareanceicon(blue, 25px);
   position: fixed;

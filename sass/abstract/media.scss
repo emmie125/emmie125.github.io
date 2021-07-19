@@ -1,23 +1,21 @@
 @media screen and(max-width: $max-width-portable) {
   header {
     width: 100vw;
-    padding: 2% 10%;
+    padding: 1% 5%;
   }
-  nav {
-    display: block;
-    width: 100%;
-    .nav__menu {
-      display: none;
-    }
+  .nav__menu {
+    display: none !important;
   }
-  .nav__logo {
-    padding-left: 0%;
-  }
+ 
+ 
   .menu-active {
-    color: none;
-    background-color: none;
-    padding: none;
-  }
+    border-bottom: none !important;
+    background-color:$color;
+    padding:2%;
+    a{
+      color:$background;
+    }
+   }
   .container__section {
     &__home {
       padding-top: 25%;
@@ -39,6 +37,15 @@
       }
     }
     &__projects {
+      &__tools{
+        display: flex;
+      justify-content:space-between;
+        width: 90%;
+        p{
+          @include appareanceicon($color, 25px);
+          opacity: 0.5;
+      }
+    }
       &__container-card {
         width: 85%;
         margin: 0% 5%;
@@ -236,7 +243,7 @@
     right: 0%;
     top: 0%;
     z-index: none;
-    padding-top: 10%;
+    padding-top: 7%;
     a {
       color: $color;
     }

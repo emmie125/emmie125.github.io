@@ -70,13 +70,12 @@
         ],
         "framework":
         [
-            { "id":1,"nom":"semantic","icon":"images/icon/semantic-ui-seeklogo.com.svg"}
+            { "id":1,"nom":"semantic","icon":"images/icon/semantic-ui-seeklogo.com.svg","percent":60}
            ],
            "tools":
         [
-            { "id":1,"nom":"windows","icon":"images/icon/windows.eps"},
-            { "id":1,"nom":"Ubuntu","icon":"images/icon/ubuntu-brands.svg"},
-            { "id":1,"nom":"Ubuntu","icon":"images/icon/github-brands.svg"}
+            { "id":1,"nom":"windows","icon":"images/icon/windows.eps","percent":60},
+            { "id":2,"nom":"Ubuntu","icon":"images/icon/ubuntu-brands.svg","percent":60}
            ]
     }]
 }

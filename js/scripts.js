@@ -1,6 +1,7 @@
 const header = document.querySelector('.header');
 
 window.addEventListener('scroll',()=>{
+       
     if (window.scrollY>=100) {
         header.classList.replace('header','header-scroll');
     }
@@ -12,17 +13,25 @@ window.addEventListener('scroll',()=>{
 })
 
 //active
-const menuActive = document.querySelector('.nav__menu a');
-menuActive.addEventListener('click',e=>{
+const menuActive = document.querySelector('#navbar');
+const btns = document.querySelectorAll('.btn');
+let navbar=[];
+navbar[0]=true;
+console.log(navbar.filter(element=> element===true));
+
+for (let i = 0; i < btns.length;i++){
    
-    if(e.target.isConnected){
-        menuActive.classList.replace('.nav__menu a','menu-active'); 
+    
+    btns[i].addEventListener('click',e=>{
+
+        btns[i].classList.replace('btn','menu-active');
+        navbar[i]=true;
+      
+       
     }
-    else{
-        menuActive.classList.replace('menu-active','.nav__menu a');
-    }
-    console.log(e);
-})
+    )
+}
+
 //scroll bar button
 
 //Button toggle
@@ -60,11 +69,3 @@ menuActive.addEventListener('click',e=>{
 
 })
 
-//section_skills
-
-
-const skillsDynamics = document.querySelector('.container__section__skills__category__languages__progress__bar__dynamic');
-
-window.addEventListener('load',()=>{
-    skillsDynamics.style.width="40%";
-})
