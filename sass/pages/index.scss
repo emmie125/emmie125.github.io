@@ -236,6 +236,7 @@ header {
           flex-direction: column;
           &__percent {
             display: flex;
+            justify-content: space-between;
             h4 {
               padding: 0;
               margin: 2%;

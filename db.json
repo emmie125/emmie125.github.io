@@ -60,23 +60,23 @@
     {
      "languages":
      [
-         { "id":1,"nom":"sass","percent":60},
-         {"id":2,"nom":"less","percent":40},
+         { "id":1,"nom":"sass","percent":70},
+         {"id":2,"nom":"less","percent":60},
          {"id":3,"nom" :"html","percent":70},
-         {"id":4,"nom":"js","percent":60},
+         {"id":4,"nom":"js","percent":80},
          {"id":5,"nom":"java","percent":60},
-         {"id":6,"nom":"arduino","percent":40}
+         {"id":6,"nom":"arduino","percent":50}
          
         ],
         "framework":
         [
             { "id":1,"nom":"semantic","percent":60},
-            { "id":2,"nom":"react","percent":60}
+            { "id":2,"nom":"react","percent":80}
            ],
            "tools":
         [
-            { "id":1,"nom":"windows","icon":"images/icon/windows.eps","percent":60},
-            { "id":2,"nom":"Ubuntu","icon":"images/icon/ubuntu-brands.svg","percent":60}
+            { "id":1,"nom":"windows","icon":"images/icon/windows.eps","percent":75},
+            { "id":2,"nom":"Ubuntu","icon":"images/icon/ubuntu-brands.svg","percent":70}
            ]
     }]
 }
