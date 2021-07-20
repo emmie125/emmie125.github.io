@@ -2,6 +2,8 @@
 const skillsCategory = document.querySelector('.container__section__skills__category');
 
 const urlSkills="https://my-json-server.typicode.com/emmie125/emmie125.github.io/skills";
+
+
 window.addEventListener('load',()=>{
     fetch(urlSkills).then((response)=>{
         return response.json();
@@ -19,12 +21,16 @@ window.addEventListener('load',()=>{
 function renderSkillsElement(skills) {
     
     if (skills.languages) { 
-
-        const categoryTypes= document.createElement('div');   
+        const title = document.createElement('h3');
+        const categoryTypes= document.createElement('div');  
+        
+        title.textContent="Languages";
         categoryTypes.classList.add('container__section__skills__category__languages');
 
+        categoryTypes.appendChild(title);
+
         for (const languages of skills.languages) {
-            
+
             categoryTypes.appendChild(createHMTLElements(languages));
         }  
         skillsCategory.appendChild(categoryTypes);
@@ -32,9 +38,13 @@ function renderSkillsElement(skills) {
   
    
     if(skills.framework){
-
+        const title = document.createElement('h3');
         const categoryTypes= document.createElement('div');
+
         categoryTypes.classList.add('container__section__skills__category__languages');
+        title.textContent="Framework";
+
+        categoryTypes.appendChild(title);
 
         for (const framework of skills.framework) {
             categoryTypes.appendChild(createHMTLElements(framework));
@@ -44,8 +54,14 @@ function renderSkillsElement(skills) {
   
     
     if(skills.tools){
+
+        const title = document.createElement('h3');
         const categoryTypes= document.createElement('div');
+      
         categoryTypes.classList.add('container__section__skills__category__languages');
+        title.textContent="Tools";
+
+        categoryTypes.appendChild(title);
         
         for (const tools of skills.tools) {
            

@@ -70,7 +70,8 @@
         ],
         "framework":
         [
-            { "id":1,"nom":"semantic","icon":"images/icon/semantic-ui-seeklogo.com.svg","percent":60}
+            { "id":1,"nom":"semantic","percent":60},
+            { "id":2,"nom":"react","percent":60}
            ],
            "tools":
         [
