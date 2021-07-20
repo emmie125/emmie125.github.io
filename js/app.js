@@ -95,8 +95,8 @@ function createHMTLElements(languages) {
         progressPercent.appendChild(titlePercent);
         progressPercent.appendChild(percent);
         skillsProgress.appendChild(progressPercent);
+        progressBar.appendChild(progressBarDynamic);
         skillsProgress.appendChild(progressBar);
-        skillsProgress.appendChild(progressBarDynamic);
        
     return progressPercent, skillsProgress
         
