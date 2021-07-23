@@ -8,7 +8,8 @@ const urlSkills =
 const urlProject =
   "https://my-json-server.typicode.com/emmie125/emmie125.github.io/project";
 
-window.addEventListener("load", () => {
+
+  window.addEventListener("load", () => {
   fetch(urlSkills)
     .then((response) => {
       return response.json();

@@ -21,56 +21,49 @@ body {
 
 header {
   width: 100vw;
-  height: 7vh;
-  color: #ff7c00;
+  height: 8vh;
+  color: #04192a;
+  align-items: center;
   text-align: center;
+  justify-content: center;
   position: fixed;
   z-index: 1000;
+  padding: 0.9% 0%;
 }
 header nav {
   width: 100%;
   height: 100%;
   display: flex;
-  text-align: center;
   justify-content: space-between;
 }
 header .nav__logo {
   width: 30%;
   height: 100%;
+  justify-content: center;
+  align-items: center;
   text-align: left;
   padding-left: 2%;
 }
 header .nav__menu {
-  width: 70%;
+  width: 40%;
   height: 100%;
   list-style: none;
-  text-align: right;
   display: flex;
-  justify-content: space-evenly;
-  text-align: center;
+  justify-content: right;
+  text-align: right;
 }
-header .nav__menu p {
-  width: 10%;
+header .nav__menu a {
+  width: 5%;
   height: 100%;
-  text-align: center;
-  justify-content: center;
-  margin: 0% 2%;
   font-size: 16px;
   cursor: pointer;
-}
-header .nav__menu p a {
-  color: white;
+  color: black;
+  margin: 0% 5%;
 }
 
 .header-scroll {
-  background-color: #04192a;
+  background-color: #ff7c00;
   scroll-behavior: smooth;
-}
-
-.menu-active {
-  border-bottom: 5px solid #ff7c00;
-  color: #ff7c00 !important;
-  padding-bottom: 25%;
 }
 
 .menu-toggle {
@@ -206,7 +199,6 @@ header .nav__menu p a {
   width: 100%;
 }
 .container__section__skills {
-  padding-top: 5%;
   background-color: #04192a;
   display: flex;
   flex-direction: column;
@@ -224,7 +216,7 @@ header .nav__menu p a {
   color: white;
 }
 .container__section__skills__category__languages {
-  padding: 3% 2%;
+  padding: 2%;
   width: 47%;
   display: flex;
   flex-direction: column;
@@ -270,7 +262,6 @@ header .nav__menu p a {
   display: flex;
   justify-content: center;
   width: 100%;
-  margin: 2% 0%;
 }
 .container__section__about__information__profil {
   width: 40%;
