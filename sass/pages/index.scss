@@ -29,19 +29,19 @@ header {
     padding-left: 2%;
   }
   .nav__menu {
-    width: 50%;
+    width: 70%;
     height: 100%;
     @include removechips;
-    display: flex;
-    justify-content:right;
-    text-align: right;
+    // display: flex;
+    // justify-content:right;
+    // text-align: right;
     a {
       width:7%;
       height: 100%;
       font-size: 16px;
       cursor: pointer;
       color: $color;
-      margin:0% 2.5%;
+      margin:0% 2%;
     }
   }
 }

@@ -9,14 +9,14 @@
   }
  
  
-  .menu-active {
-    border-bottom: none !important;
-    background-color:$color;
-    padding:2%;
-    a{
-      color:$background;
-    }
-   }
+  // .menu-active {
+  //   border-bottom: none !important;
+  //   background-color:$color;
+  //   padding:2%;
+  //   a{
+  //     color:$background !important;
+  //   }
+   //}
   .container__section {
     &__home {
       padding-top: 25%;
@@ -33,7 +33,7 @@
         width: 90%;
        p{
         text-align: center;
-        font-size : 0.5rem !important;
+        font-size : 1rem !important;
        }
       }
       &__cv {
@@ -259,6 +259,8 @@
     z-index: none;
     padding-top: 7%;
     a {
+      display: block;
+      margin: 4% 0%;
       color: $color;
     }
     transition: all linear 0.5s;
