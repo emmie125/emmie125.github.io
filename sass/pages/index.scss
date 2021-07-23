@@ -6,7 +6,7 @@
 header {
   width: 100vw;
   height: 8vh;
-  color: $background;
+  color: $color;
   align-items: center;
   text-align: center;
   justify-content: center;
@@ -40,13 +40,13 @@ header {
       height: 100%;
       font-size: 16px;
       cursor: pointer;
-      color: black;
+      color: $color;
       margin:0% 5%;
     }
   }
 }
 .header-scroll {
-  background-color: $color;
+  background-color: $background;
   scroll-behavior: smooth;
 }
 // .menu-active {
