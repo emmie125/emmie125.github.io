@@ -25,25 +25,25 @@
 
 
 .primary {
-  width: 100%;
-  padding: 2% 4%;
   background-color: $color;
   border-radius: 15px;
   color: $background;
+  border: 1px solid $color;
   &:hover{
-    color: $background;
+    color: $color;
+    background-color: transparent;
+   
   }
   
 }
 
 .secondary {
   border: 1px solid $color;
-  padding: 2% 4%;
-  margin-left: 10%;
-  border-radius: 15px;
+  margin-left: 2%;
   color: $color;
   &:hover{
-    color: $color;
+    color: $background;
+    background-color: $color;
   }
 }
 

@@ -21,9 +21,20 @@
     &__home {
       padding-top: 25%;
       padding-bottom:5%;
-      // height: 70vh;
+      &__identity{
+        width: 90%; 
+        text-align: left !important;
+        h1{
+          font-size:2.5rem;
+         }
+      }
+     
       &__description {
         width: 90%;
+       p{
+        text-align: center;
+        font-size : 0.5rem !important;
+       }
       }
       &__cv {
         p {

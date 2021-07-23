@@ -71,12 +71,10 @@
         "framework":
         [
             { "id":1,"nom":"semantic","percent":60},
-            { "id":2,"nom":"react","percent":80}
-           ],
-           "tools":
-        [
-            { "id":1,"nom":"windows","icon":"images/icon/windows.eps","percent":75},
-            { "id":2,"nom":"Ubuntu","icon":"images/icon/ubuntu-brands.svg","percent":70}
+            { "id":2,"nom":"react","percent":80},
+            { "id":1,"nom":"windows","percent":75},
+            { "id":2,"nom":"Ubuntu","percent":70}
+          
            ]
     }]
 }

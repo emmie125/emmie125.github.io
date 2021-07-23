@@ -17,7 +17,6 @@ header {
     display: flex;
     text-align: center;
     justify-content: space-between;
-   
   }
   .nav__logo {
     width: 30%;
@@ -32,14 +31,14 @@ header {
     text-align: right;
     display: flex;
     justify-content: space-evenly;
-   text-align: center;
+    text-align: center;
     p {
       width: 10%;
       height: 100%;
       text-align: center;
       justify-content: center;
       margin: 0% 2%;
-   
+
       font-size: 16px;
       cursor: pointer;
       a {
@@ -57,11 +56,10 @@ header {
 .menu-active {
   border-bottom: 5px solid $color;
   color: $color !important;
-  padding-bottom:25%;
-  
+  padding-bottom: 25%;
 }
-.menu-toggle{
-  display:none important;
+.menu-toggle {
+  display: none important;
 }
 .toggle-menu {
   display: none;
@@ -72,8 +70,7 @@ header {
   @include positionnement(flex, column);
   justify-content: center;
   &__home {
-    padding-top: 15%;
-    padding-left: 5%;
+    padding-top: 10%;
     padding-bottom: 5%;
     background-image: linear-gradient(
         0deg,
@@ -86,12 +83,14 @@ header {
     background-size: cover;
     background-position: left center;
     @include positionnement(flex, column);
+    align-items: center;
+    text-align: center;
     &__reseau {
       width: 96%;
       @include positionnement(flex, row);
       margin: 2% 0%;
-
-      text-align: left;
+      justify-content: center;
+      text-align: center;
 
       p {
         width: 10%;
@@ -106,48 +105,54 @@ header {
       }
     }
     &__identity {
+      width: 60%;
+      text-align: center;
       h1 {
         color: $colorGeneral;
         font-family: $font-family;
         font-weight: normal;
+        font-size:4.5rem;
+        font-weight: 900;
       }
     }
     &__description {
       width: 45%;
-      font-family: $font-family;
+      font-family: "Roboto", sans-serif;
       color: $colorGeneral;
       font-size: $fontSizeParagraph;
       font-weight: normal;
       margin: 2% 0%;
+      font-size:1.5rem;
     }
     &__cv {
       width: 100%;
       margin: 3% 0%;
       display: flex;
-      p {
-        width: 35%;
+      justify-content: center;
+      a {
+        padding: 1% 2%;
+        border-radius: 15px;
+        // width: 20%;
       }
-      p:hover {
+      a:hover {
         transform: scale(1.03) !important;
         transition: all 0.5s linear;
       }
     }
   }
   &__projects {
-    
-  
     justify-content: center;
     text-align: center;
-    
-    &__tools{
-        display: flex;
-      justify-content:space-around;
-        width: 80%;
-        margin:7% auto 0% auto;
-        p{
-            @include appareanceicon($background, 45px);
-            opacity: 0.5;
-        }
+
+    &__tools {
+      display: flex;
+      justify-content: space-around;
+      width: 80%;
+      margin: 7% auto 0% auto;
+      p {
+        @include appareanceicon($background, 45px);
+        opacity: 0.5;
+      }
     }
     &__container-card {
       width: 100%;
@@ -247,9 +252,9 @@ header {
             width: 90%;
             border-radius: 5px;
             background-color: $background;
-           position: relative;
+            position: relative;
             &__dynamic {
-             height: 5px;
+              height: 5px;
               background-color: $color;
               border-radius: 5px;
             }
@@ -281,17 +286,17 @@ header {
         display: flex;
         flex-direction: column;
         &__cv {
-            width: 100%;
-            margin: 3% 0%;
-            display: flex;
-            p {
-              width: 35%;
-            }
-            p:hover {
-              transform: scale(1.03) !important;
-              transition: all 0.5s linear;
-            }
+          width: 100%;
+          margin: 3% 0%;
+          display: flex;
+          p {
+            width: 35%;
           }
+          p:hover {
+            transform: scale(1.03) !important;
+            transition: all 0.5s linear;
+          }
+        }
         &__illustration {
           display: flex;
           flex-direction: column;

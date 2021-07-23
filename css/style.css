@@ -88,8 +88,7 @@ header .nav__menu p a {
   justify-content: center;
 }
 .container__section__home {
-  padding-top: 15%;
-  padding-left: 5%;
+  padding-top: 10%;
   padding-bottom: 5%;
   background-image: linear-gradient(0deg, #08131b 0%, rgba(8, 19, 27, 0.8869922969) 83%, #08131b 100%), url("../images/background/YpokV5ZAYT.jpg");
   background-repeat: repeat;
@@ -97,13 +96,16 @@ header .nav__menu p a {
   background-position: left center;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 .container__section__home__reseau {
   width: 96%;
   display: flex;
   flex-direction: row;
   margin: 2% 0%;
-  text-align: left;
+  justify-content: center;
+  text-align: center;
 }
 .container__section__home__reseau p {
   width: 10%;
@@ -116,28 +118,37 @@ header .nav__menu p a {
   transform: scale(1.03) !important;
   transition: all 0.5s linear;
 }
+.container__section__home__identity {
+  width: 60%;
+  text-align: center;
+}
 .container__section__home__identity h1 {
   color: white;
-  font-family: "beckman";
+  font-family: "roboto", sans-serif;
   font-weight: normal;
+  font-size: 4.5rem;
+  font-weight: 900;
 }
 .container__section__home__description {
   width: 45%;
-  font-family: "beckman";
+  font-family: "Roboto", sans-serif;
   color: white;
   font-size: 28px;
   font-weight: normal;
   margin: 2% 0%;
+  font-size: 1.5rem;
 }
 .container__section__home__cv {
   width: 100%;
   margin: 3% 0%;
   display: flex;
+  justify-content: center;
 }
-.container__section__home__cv p {
-  width: 35%;
+.container__section__home__cv a {
+  padding: 1% 2%;
+  border-radius: 15px;
 }
-.container__section__home__cv p:hover {
+.container__section__home__cv a:hover {
   transform: scale(1.03) !important;
   transition: all 0.5s linear;
 }
@@ -324,7 +335,7 @@ header .nav__menu p a {
   height: 3px;
 }
 .titre h2 {
-  font-family: "beckman";
+  font-family: "roboto", sans-serif;
   color: #04192a;
   font-weight: normal;
   font-size: 45px;
@@ -363,25 +374,24 @@ header .nav__menu p a {
 }
 
 .primary {
-  width: 100%;
-  padding: 2% 4%;
   background-color: #ff7c00;
   border-radius: 15px;
   color: #04192a;
+  border: 1px solid #ff7c00;
 }
 .primary:hover {
-  color: #04192a;
+  color: #ff7c00;
+  background-color: transparent;
 }
 
 .secondary {
   border: 1px solid #ff7c00;
-  padding: 2% 4%;
-  margin-left: 10%;
-  border-radius: 15px;
+  margin-left: 2%;
   color: #ff7c00;
 }
 .secondary:hover {
-  color: #ff7c00;
+  color: #04192a;
+  background-color: #ff7c00;
 }
 
 @media screen and (max-width: 550px) {
@@ -407,8 +417,19 @@ header .nav__menu p a {
     padding-top: 25%;
     padding-bottom: 5%;
   }
+  .container__section__home__identity {
+    width: 90%;
+    text-align: left !important;
+  }
+  .container__section__home__identity h1 {
+    font-size: 2.5rem;
+  }
   .container__section__home__description {
     width: 90%;
+  }
+  .container__section__home__description p {
+    text-align: center;
+    font-size: 0.5rem !important;
   }
   .container__section__home__cv p {
     width: 100%;
