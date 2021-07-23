@@ -22,7 +22,7 @@ body {
 header {
   width: 100vw;
   height: 8vh;
-  color: #04192a;
+  color: #ff7c00;
   align-items: center;
   text-align: center;
   justify-content: center;
@@ -45,7 +45,7 @@ header .nav__logo {
   padding-left: 2%;
 }
 header .nav__menu {
-  width: 40%;
+  width: 50%;
   height: 100%;
   list-style: none;
   display: flex;
@@ -53,16 +53,16 @@ header .nav__menu {
   text-align: right;
 }
 header .nav__menu a {
-  width: 5%;
+  width: 7%;
   height: 100%;
   font-size: 16px;
   cursor: pointer;
-  color: black;
-  margin: 0% 5%;
+  color: #ff7c00;
+  margin: 0% 3%;
 }
 
 .header-scroll {
-  background-color: #ff7c00;
+  background-color: #04192a;
   scroll-behavior: smooth;
 }
 
