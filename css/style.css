@@ -78,8 +78,7 @@ header .nav__menu a {
   justify-content: center;
 }
 .container__section__home {
-  padding-top: 10%;
-  padding-bottom: 5%;
+  padding: 10% 0%;
   background-image: linear-gradient(0deg, #08131b 0%, rgba(8, 19, 27, 0.8869922969) 83%, #08131b 100%), url("../images/background/YpokV5ZAYT.jpg");
   background-repeat: repeat;
   background-size: cover;
@@ -117,6 +116,7 @@ header .nav__menu a {
   font-family: "roboto", sans-serif;
   font-weight: normal;
   font-size: 4.5rem;
+  line-height: 65px;
   font-weight: 900;
 }
 .container__section__home__description {
@@ -143,6 +143,7 @@ header .nav__menu a {
   transition: all 0.5s linear;
 }
 .container__section__projects {
+  padding: 5% 0%;
   justify-content: center;
   text-align: center;
 }
@@ -196,6 +197,7 @@ header .nav__menu a {
   width: 100%;
 }
 .container__section__skills {
+  padding: 5% 0%;
   background-color: #04192a;
   display: flex;
   flex-direction: column;
@@ -250,6 +252,7 @@ header .nav__menu a {
   border-radius: 5px;
 }
 .container__section__about {
+  padding: 5% 0%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -399,22 +402,24 @@ header .nav__menu a {
   .container__section__home__identity {
     width: 90%;
     text-align: left !important;
+    padding: 5% 0%;
   }
   .container__section__home__identity h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
   .container__section__home__description {
+    padding: 3% 0%;
     width: 90%;
   }
   .container__section__home__description p {
     text-align: center;
     font-size: 1rem !important;
   }
-  .container__section__home__cv p {
-    width: 100%;
+  .container__section__home__cv {
+    padding: 5% 0%;
   }
   .container__section__home__reseau {
-    margin-top: 5%;
+    padding: 5% 0%;
     width: 90%;
     display: flex;
     justify-content: space-between;
