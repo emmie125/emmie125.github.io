@@ -43,7 +43,7 @@ const renderSkillsElement = (skills) => {
     categoryTypes.appendChild(title);
 
     for (const languages of skills.languages) {
-      categoryTypes.appendChild(createHMTLElements(languages));
+      categoryTypes.appendChild(createHtmlElementsSkills(languages));
     }
     skillsCategory.appendChild(categoryTypes);
   }
@@ -60,7 +60,7 @@ const renderSkillsElement = (skills) => {
     categoryTypes.appendChild(title);
 
     for (const framework of skills.framework) {
-      categoryTypes.appendChild(createHMTLElements(framework));
+      categoryTypes.appendChild(createHtmlElementsSkills(framework));
     }
     skillsCategory.appendChild(categoryTypes);
   }
@@ -77,12 +77,12 @@ const renderSkillsElement = (skills) => {
     categoryTypes.appendChild(title);
 
     for (const tools of skills.tools) {
-      categoryTypes.appendChild(createHMTLElements(tools));
+      categoryTypes.appendChild(createHtmlElementsSkills(tools));
     }
     skillsCategory.appendChild(categoryTypes);
   }
 }
-const createHMTLElements = (languages) =>{
+const createHtmlElementsSkills = (languages) =>{
   const skillsProgress = document.createElement("div");
   const progressBar = document.createElement("div");
   const progressBarDynamic = document.createElement("div");
