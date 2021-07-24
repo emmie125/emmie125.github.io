@@ -143,7 +143,7 @@ header .nav__menu a {
   transition: all 0.5s linear;
 }
 .container__section__projects {
-  padding: 5% 0%;
+  padding: 2.5% 0%;
   justify-content: center;
   text-align: center;
 }
@@ -197,15 +197,12 @@ header .nav__menu a {
   width: 100%;
 }
 .container__section__skills {
-  padding: 5% 0%;
+  padding: 2.5% 0%;
   background-color: #04192a;
   display: flex;
   flex-direction: column;
   width: 100%;
   padding-bottom: 5%;
-}
-.container__section__skills h2 {
-  color: #ff7c00 !important;
 }
 .container__section__skills__category {
   width: auto;
@@ -252,7 +249,7 @@ header .nav__menu a {
   border-radius: 5px;
 }
 .container__section__about {
-  padding: 5% 0%;
+  padding: 2.5% 0%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -262,6 +259,11 @@ header .nav__menu a {
   display: flex;
   justify-content: center;
   width: 100%;
+  padding-top: 2%;
+}
+.container__section__about__information .about-paragraph {
+  margin-top: 3%;
+  line-height: 40px;
 }
 .container__section__about__information__profil {
   width: 40%;
@@ -295,6 +297,7 @@ header .nav__menu a {
 .container__section__about__information__description__illustration div {
   display: flex;
   width: 100%;
+  margin-bottom: 2%;
 }
 .container__section__about__information__description__illustration div p:nth-child(1) {
   width: 10%;
@@ -311,7 +314,6 @@ header .nav__menu a {
 }
 
 .titre {
-  text-align: center;
   width: 15%;
   position: relative;
   left: 0;
@@ -319,15 +321,17 @@ header .nav__menu a {
   right: inherit;
   bottom: 0;
   margin: 0% auto;
+  text-align: center;
 }
 .titre .soulignement {
-  width: 0%;
-  background-color: #ff7c00;
+  width: 5%;
+  border-top: 6px solid #ff7c00;
   height: 3px;
+  display: inline-block;
 }
 .titre h2 {
   font-family: "roboto", sans-serif;
-  color: #04192a;
+  color: #ff7c00;
   font-weight: normal;
   font-size: 45px;
 }

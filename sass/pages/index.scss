@@ -32,9 +32,6 @@ header {
     width: 70%;
     height: 100%;
     @include removechips;
-    // display: flex;
-    // justify-content:right;
-    // text-align: right;
     a {
       width:7%;
       height: 100%;
@@ -49,11 +46,6 @@ header {
   background-color: $background;
   scroll-behavior: smooth;
 }
-// .menu-active {
-//   border-bottom: 5px solid $background !important;
-//   color: $background !important;
-//   padding:0.5% 0%;
-// }
 .menu-toggle {
   display: none important;
 }
@@ -138,7 +130,7 @@ header {
     }
   }
   &__projects {
-    padding: 5% 0%;
+    padding: 2.5% 0%;
     justify-content: center;
     text-align: center;
 
@@ -199,16 +191,13 @@ header {
     }
   }
   &__skills {
-    padding: 5% 0%;
+    padding: 2.5% 0%;
     background-color: $background;
     display: flex;
     flex-direction: column;
     width: 100%;
     padding-bottom: 5%;
 
-    h2 {
-      color: $color !important;
-    }
     &__category {
       width: auto;
       display: flex;
@@ -262,7 +251,7 @@ header {
     }
   }
   &__about {
-    padding: 5% 0%;
+    padding: 2.5% 0%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -271,9 +260,13 @@ header {
       display: flex;
       justify-content: center;
       width: 100%;
+      padding-top: 2%;
+      .about-paragraph{
+        margin-top: 3%;
+        line-height:40px;
+      }
       &__profil {
         width: 40%;
-
         img {
           width: 70%;
           border: 3px solid $background;
@@ -302,6 +295,7 @@ header {
           div {
             display: flex;
             width: 100%;
+            margin-bottom: 2%;
             & p:nth-child(1) {
               width: 10%;
             }
@@ -321,7 +315,6 @@ header {
   }
 }
 .titre {
-  text-align: center;
   width: 15%;
   position: relative;
   left: 0;
@@ -329,21 +322,21 @@ header {
   right: inherit;
   bottom: 0;
   margin: 0% auto;
-
+  text-align: center;
   .soulignement {
-    width: 0%;
-    background-color: $color;
+    
+    width: 5%;
+   border-top: 6px solid $color;
     height: 3px;
+    display: inline-block;
   }
   h2 {
     font-family: $font-family;
-    color: $background;
+    color: $color;
     font-weight: normal;
     font-size: 45px;
   }
-  // h2:hover .soulignement{
-  //     animation:soulignementanimation 2s;
-  // }
+ 
 }
 @keyframes soulignementanimation {
   0% {
