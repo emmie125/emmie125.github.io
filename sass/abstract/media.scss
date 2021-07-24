@@ -193,8 +193,7 @@
           margin: 0 auto;
 
           img {
-            width: 70%;
-            border: 3px solid $background;
+            border: 7px solid $background;
           }
         }
         &__description {
@@ -229,6 +228,9 @@
     h2 {
       font-size: 30px !important;
     }
+  }
+  .titre .soulignement {
+   width: 10% ;
   }
 
   .toggle-menu {

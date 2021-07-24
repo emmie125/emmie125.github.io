@@ -270,7 +270,7 @@ header .nav__menu a {
 }
 .container__section__about__information__profil img {
   width: 70%;
-  border: 3px solid #04192a;
+  border: 10px solid #04192a;
 }
 .container__section__about__information__description {
   width: 50%;
@@ -560,8 +560,7 @@ header .nav__menu a {
     margin: 0 auto;
   }
   .container__section__about__information__profil img {
-    width: 70%;
-    border: 3px solid #04192a;
+    border: 7px solid #04192a;
   }
   .container__section__about__information__description {
     width: 96%;
@@ -593,6 +592,10 @@ header .nav__menu a {
   }
   .container__section h2 {
     font-size: 30px !important;
+  }
+
+  .titre .soulignement {
+    width: 10%;
   }
 
   .toggle-menu {
